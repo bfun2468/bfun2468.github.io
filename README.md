@@ -50,11 +50,11 @@
     <section id="hero" class="hero-section flex items-center justify-center">
         <div id="vanta-bg" class="absolute inset-0"></div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">JASON CARTER</h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">Bram Verschaeve</h1>
             <div class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
                 <span class="text-blue-400">3D Generalist</span> • 
                 <span class="text-purple-400">Game Animator</span> • 
-                <span class="text-green-400">Designer</span>
+                <span class="text-green-400">Game Designer</span>
             </div>
             <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
                 <a href="#work" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition">View Work</a>
