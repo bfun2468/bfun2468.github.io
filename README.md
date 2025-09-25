@@ -50,7 +50,7 @@
     <section id="hero" class="hero-section flex items-center justify-center">
         <div id="vanta-bg" class="absolute inset-0"></div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">JASON CARTER</h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">Bram Verschaeve</h1>
             <div class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
                 <span class="text-blue-400">3D Generalist</span> • 
                 <span class="text-purple-400">Game Animator</span> • 
@@ -67,7 +67,7 @@
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">JC</div>
+                <div class="text-2xl font-bold">BV</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#work" class="nav-link">Work</a>
                     <a href="#about" class="nav-link">About</a>
@@ -299,7 +299,7 @@
                             <i data-feather="mail" class="w-6 h-6 mr-4 text-blue-400"></i>
                             <div>
                                 <h4 class="font-medium">Email</h4>
-                                <p class="text-gray-400">contact@jasoncarter3d.com</p>
+                                <p class="text-gray-400">https://www.bramverschaeve.com/</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -372,7 +372,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">JC</div>
+                    <div class="text-2xl font-bold">BV</div>
                     <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
                 </div>
                 <div class="flex space-x-6">
@@ -383,7 +383,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2023 Jason Carter. All rights reserved.</p>
+                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
                     <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
