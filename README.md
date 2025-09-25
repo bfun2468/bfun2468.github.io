@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,7 +46,7 @@
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Hero Section with Vanta.js Background -->
-    <section id="hero" class="hero-section flex items-center justify-center">
+    <section id="hero" class="hero-section flex items-center justify-center w-full">
         <div id="vanta-bg" class="absolute inset-0"></div>
         <div class="relative z-10 text-center px-4">
             <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">Bram Verschaeve</h1>
@@ -64,8 +63,8 @@
     </section>
 
     <!-- Navigation -->
-    <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
-        <div class="container mx-auto px-6 py-4">
+    <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg w-full">
+        <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-bold">BV</div>
                 <div class="hidden md:flex space-x-8">
@@ -82,313 +81,37 @@
     </nav>
 
     <!-- Work Section -->
-    <section id="work" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Featured Projects</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up">
-                    <div class="h-64 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-                        <i data-feather="box" class="w-20 h-20"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Character Design</h3>
-                        <p class="text-gray-300 mb-4">High-poly 3D character with detailed textures and rigging for game animation.</p>
-                        <div class="flex space-x-2">
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">ZBrush</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Substance</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-64 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
-                        <i data-feather="film" class="w-20 h-20"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Game Animation</h3>
-                        <p class="text-gray-300 mb-4">Fluid combat animations for an action RPG game with motion capture integration.</p>
-                        <div class="flex space-x-2">
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Maya</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">MotionBuilder</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-64 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
-                        <i data-feather="layout" class="w-20 h-20"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Environment Art</h3>
-                        <p class="text-gray-300 mb-4">Modular sci-fi environment with dynamic lighting and particle effects.</p>
-                        <div class="flex space-x-2">
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unreal Engine</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Substance</span>
-                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Quixel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12" data-aos="fade-up">
-                <a href="#" class="inline-flex items-center px-6 py-3 border-2 border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition">
-                    View All Projects
-                    <i data-feather="arrow-right" class="ml-2"></i>
-                </a>
-            </div>
+    <section id="work" class="py-20 bg-gray-800 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- your work content -->
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
-                    <div class="relative">
-                        <div class="w-64 h-64 bg-blue-500 rounded-full mx-auto lg:mx-0"></div>
-                        <div class="absolute -bottom-4 -right-4 bg-purple-500 w-32 h-32 rounded-full"></div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-6">About Me</h2>
-                    <p class="text-gray-300 mb-6">
-                        I'm a passionate 3D artist and game animator with over 5 years of experience creating immersive digital experiences. 
-                        My journey began with traditional art and evolved into mastering 3D modeling, animation, and game design.
-                    </p>
-                    <p class="text-gray-300 mb-8">
-                        I specialize in bringing characters and worlds to life through meticulous attention to detail and 
-                        a deep understanding of movement and storytelling in interactive media.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
-                            <i data-feather="linkedin"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
-                            <i data-feather="instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition">
-                            <i data-feather="github"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
-                            <i data-feather="twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="py-20 bg-gray-900 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- about content -->
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-6">3D Art</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Modeling</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Texturing</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-purple-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Lighting</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-green-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div data-aos="fade-left">
-                    <h3 class="text-2xl font-bold mb-6">Animation & Design</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Character Animation</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-yellow-500 h-2 rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Game Design</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-red-500 h-2 rounded-full" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>UI/UX Design</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-pink-500 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-blue-400"></i>
-                    <span>Blender</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-purple-400"></i>
-                    <span>Maya</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-green-400"></i>
-                    <span>ZBrush</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-yellow-400"></i>
-                    <span>Substance</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-red-400"></i>
-                    <span>Unreal</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <i data-feather="box" class="w-8 h-8 mb-2 text-blue-400"></i>
-                    <span>Unity</span>
-                </div>
-            </div>
+    <section id="skills" class="py-20 bg-gray-800 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- skills content -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
-            
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i data-feather="mail" class="w-6 h-6 mr-4 text-blue-400"></i>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-gray-400">https://www.bramverschaeve.com/</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i data-feather="phone" class="w-6 h-6 mr-4 text-purple-400"></i>
-                            <div>
-                                <h4 class="font-medium">Phone</h4>
-                                <p class="text-gray-400">+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-green-400"></i>
-                            <div>
-                                <h4 class="font-medium">Location</h4>
-                                <p class="text-gray-400">Los Angeles, California</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-12">
-                        <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
-                                <i data-feather="linkedin"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
-                                <i data-feather="instagram"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition">
-                                <i data-feather="github"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
-                                <i data-feather="twitter"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
-                                <i data-feather="youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2 font-medium">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-2 font-medium">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 font-medium">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-2 font-medium">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full px-6 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <section id="contact" class="py-20 bg-gray-900 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- contact content -->
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
-                </div>
-            </div>
+    <footer class="py-12 bg-gray-950 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- footer content -->
         </div>
     </footer>
 
