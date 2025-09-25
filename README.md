@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +64,7 @@
 
     <!-- Navigation -->
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
-        <div class="w-full max-w-7xl mx-auto px-6 py-4">
+        <div class="w-full px-6 py-4 mx-auto">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-bold">BV</div>
                 <div class="hidden md:flex space-x-8">
@@ -83,7 +82,7 @@
 
     <!-- Work Section -->
     <section id="work" class="py-20 bg-gray-800">
-        <div class="w-full max-w-7xl mx-auto px-6">
+        <div class="w-full px-6 mx-auto">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Featured Projects</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -147,7 +146,7 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900">
-        <div class="w-full max-w-7xl mx-auto px-6">
+        <div class="w-full px-6 mx-auto">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
                     <div class="relative">
@@ -186,7 +185,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-800">
-        <div class="w-full max-w-7xl mx-auto px-6">
+        <div class="w-full px-6 mx-auto">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -288,7 +287,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-900">
-        <div class="w-full max-w-7xl mx-auto px-6">
+        <div class="w-full px-6 mx-auto">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
             
             <div class="flex flex-col lg:flex-row">
@@ -325,98 +324,4 @@
                                 <i data-feather="linkedin"></i>
                             </a>
                             <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
-                                <i data-feather="instagram"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition">
-                                <i data-feather="github"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
-                                <i data-feather="twitter"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
-                                <i data-feather="youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2 font-medium">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-2 font-medium">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 font-medium">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-2 font-medium">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full px-6 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="w-full max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize Vanta.js background
-        VANTA.GLOBE({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3b82f6,
-            backgroundColor: 0x111827,
-            size: 0.8
-        });
-
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-
-        // Initialize Feather Icons
-        feather.replace();
-    </script>
-</body>
-</html>
+                                <i data-feather
