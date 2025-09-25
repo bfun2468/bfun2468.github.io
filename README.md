@@ -177,7 +177,51 @@
   <section id="skills" class="py-20 bg-gray-800">
     <div class="w-full px-6 mx-auto">
       <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
-      <!-- skill bars (same as before)... -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Skill Item -->
+        <div data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-4">3D Modeling</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-blue-500 skill-bar w-11/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Blender, Maya, ZBrush</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-4">Animation</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-green-500 skill-bar w-10/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Maya, Unity, MotionBuilder</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-4">Texturing</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-purple-500 skill-bar w-9/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Substance Painter, Photoshop</p>
+        </div>
+        <div data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-4">Game Engines</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-yellow-500 skill-bar w-10/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Unreal Engine, Unity</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-4">Rigging</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-pink-500 skill-bar w-8/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Blender, Maya</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-4">Design</h3>
+          <div class="bg-gray-600 skill-bar w-full mb-2">
+            <div class="bg-teal-500 skill-bar w-9/12"></div>
+          </div>
+          <p class="text-gray-400 text-sm">Illustrator, Figma</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -185,7 +229,43 @@
   <section id="contact" class="py-20 bg-gray-900">
     <div class="w-full px-6 mx-auto">
       <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
-      <!-- contact info & form (same as before)... -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div data-aos="fade-right">
+          <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+          <p class="text-gray-400 mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <i data-feather="mail"></i>
+              <span>your.email@example.com</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i data-feather="phone"></i>
+              <span>+32 123 456 789</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i data-feather="map-pin"></i>
+              <span>Ghent, Belgium</span>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block mb-2">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+            <div>
+              <label for="email" class="block mb-2">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+            <div>
+              <label for="message" class="block mb-2">Message</label>
+              <textarea id="message" rows="5" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+            </div>
+            <button type="submit" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
