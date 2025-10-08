@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +11,56 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-        <style>
-            @keyframes float {
-                0%, 100% { transform: translateY(0); }
-                50% { transform: translateY(-20px); }
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
             }
-            .floating {
-                animation: float 6s ease-in-out infinite;
+
+            50% {
+                transform: translateY(-20px);
             }
-.transform-style-preserve-3d {
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .transform-style-preserve-3d {
             transform-style: preserve-3d;
         }
+
         .translate-z-10 {
             transform: translateZ(10px);
         }
+
         .hero-section {
-height: 100vh;
+            height: 100vh;
             position: relative;
             overflow: hidden;
         }
+
         .portfolio-item {
             transition: all 0.3s ease;
         }
+
         .portfolio-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+
         .skill-bar {
             height: 6px;
             border-radius: 3px;
         }
+
         .nav-link {
             position: relative;
         }
+
         .nav-link:after {
             content: '';
             position: absolute;
@@ -53,40 +71,46 @@ height: 100vh;
             background-color: #3b82f6;
             transition: width 0.3s ease;
         }
+
         .nav-link:hover:after {
             width: 100%;
         }
+
         .carousel-item {
-            transition: transform 700ms cubic-bezier(0.25,0.1,0.25,1), 
-                        opacity 500ms ease, 
-                        filter 500ms ease,
-                        z-index 500ms ease;
+            transition: transform 700ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                opacity 500ms ease,
+                filter 500ms ease,
+                z-index 500ms ease;
             will-change: transform, opacity, filter, z-index;
         }
+
         .project-card {
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
         .project-card:hover {
             transform: translateY(-15px) !important;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
-.project-card {
+
+        .project-card {
             perspective: 1000px;
             transform-style: preserve-3d;
         }
+
         .project-card:hover .project-inner {
             transform: rotateY(10deg);
         }
+
         .project-inner {
             transition: transform 0.5s ease;
-        }
+        } */
     </style>
 </head>
+
 <body class="bg-gray-900 text-white">
     <!-- Hero Section with Vanta.js Background -->
-    <section id="hero"
-    class="hero-section flex items-center justify-center bg-cover bg-center relative min-h-screen"
-    style="
+    <section id="hero" class="hero-section flex items-center justify-center bg-cover bg-center relative min-h-screen" style="
         background-image: url('FrontPage.jpg');
         background-size: cover;
         background-position: center;
@@ -95,8 +119,8 @@ height: 100vh;
         <div class="relative z-10 text-center px-4">
             <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-down">BRAM VERSCHAEVE</h1>
             <div class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
-                <span class="text-blue-400">3D Generalist</span> • 
-                <span class="text-purple-400">Game Animator</span> • 
+                <span class="text-blue-400">3D Generalist</span> •
+                <span class="text-purple-400">Game Animator</span> •
                 <span class="text-green-400">Game Designer</span>
             </div>
             <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
@@ -117,7 +141,7 @@ height: 100vh;
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#contact" class="nav-link">Contact</a>
                     <a href="projects.html" class="nav-link">All Projects</a>
-</div>
+                </div>
                 <button class="md:hidden focus:outline-none">
                     <i data-feather="menu"></i>
                 </button>
@@ -129,18 +153,18 @@ height: 100vh;
     <section id="work" class="py-20 bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Featured Projects</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up">
-                <div class="h-64 relative overflow-hidden group">
-                    <img src="Pictures\Kart\FeaturedProjectsFonrtPage.jpg" alt="3D Project preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            View Project
-                        </button>
+                    <div class="h-64 relative overflow-hidden group">
+                        <img src="Pictures/Kart/FeaturedProjectsFrontPage.jpg" alt="3D Project preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </button>
+                        </div>
                     </div>
-</div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Pastel Titan</h3>
                         <p class="text-gray-300 mb-4">High-poly 3D character with detailed textures and rigging for game animation.</p>
@@ -151,7 +175,7 @@ height: 100vh;
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
                 <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <div class="h-64 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
@@ -167,7 +191,7 @@ height: 100vh;
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 3 -->
                 <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <div class="h-64 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
@@ -184,32 +208,31 @@ height: 100vh;
                     </div>
                 </div>
             </div>
-            
-           
+
         </div>
     </section>
     <!-- Projects Carousel -->
     <section id="work" class="py-20 px-6 bg-gray-800">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold mb-8 md:mb-16 text-center" data-aos="fade-up">More Projects</h2>
-            
+
             <div class="relative h-[24rem] md:h-[32rem]">
                 <div id="carousel" class="absolute w-full h-full flex items-center justify-center overflow-hidden" data-aos="fade-up">
-<!-- Project cards will be added here by JavaScript -->
+                    <!-- Project cards will be added here by JavaScript -->
                 </div>
                 <button id="prevBtn" class="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition" data-aos="fade-up">
                     <i data-feather="chevron-left" class="w-4 h-4 md:w-6 md:h-6"></i>
                 </button>
                 <button id="nextBtn" class="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition" data-aos="fade-up">
                     <i data-feather="chevron-right" class="w-4 h-4 md:w-6 md:h-6"></i>
-</button>
+                </button>
             </div>
-             <div class="text-center mt-12" data-aos="fade-up">
+            <div class="text-center mt-12" data-aos="fade-up">
                 <a href="projects.html" class="inline-flex items-center px-6 py-3 border-2 border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition">
                     View All Projects
                     <i data-feather="arrow-right" class="ml-2"></i>
                 </a>
-</div>
+            </div>
         </div>
     </section>
 
@@ -226,11 +249,11 @@ height: 100vh;
                 <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
                     <h2 class="text-4xl font-bold mb-6">About Me</h2>
                     <p class="text-gray-300 mb-6">
-                        I'm a passionate 3D artist and game animator with over 5 years of experience creating immersive digital experiences. 
+                        I'm a passionate 3D artist and game animator with over 5 years of experience creating immersive digital experiences.
                         My journey began with traditional art and evolved into mastering 3D modeling, animation, and game design.
                     </p>
                     <p class="text-gray-300 mb-8">
-                        I specialize in bringing characters and worlds to life through meticulous attention to detail and 
+                        I specialize in bringing characters and worlds to life through meticulous attention to detail and
                         a deep understanding of movement and storytelling in interactive media.
                     </p>
                     <div class="flex space-x-4">
@@ -256,7 +279,7 @@ height: 100vh;
     <section id="skills" class="py-20 bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div data-aos="fade-right">
                     <h3 class="text-2xl font-bold mb-6">3D Art</h3>
@@ -290,7 +313,7 @@ height: 100vh;
                         </div>
                     </div>
                 </div>
-                
+
                 <div data-aos="fade-left">
                     <h3 class="text-2xl font-bold mb-6">Animation & Design</h3>
                     <div class="space-y-6">
@@ -324,7 +347,7 @@ height: 100vh;
                     </div>
                 </div>
             </div>
-            
+
             <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
                 <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
                     <i data-feather="box" class="w-8 h-8 mb-2 text-blue-400"></i>
@@ -358,7 +381,7 @@ height: 100vh;
     <section id="contact" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
-            
+
             <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
                     <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
@@ -385,7 +408,7 @@ height: 100vh;
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-12">
                         <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
                         <div class="flex space-x-4">
@@ -407,7 +430,7 @@ height: 100vh;
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
                     <form class="space-y-6">
                         <div>
@@ -449,7 +472,7 @@ height: 100vh;
                     <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
                     <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
                     <a href="projects.html" class="text-blue-400 hover:text-blue-300 transition">All Projects</a>
-</div>
+                </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 mb-4 md:mb-0">© 2023 Jason Carter. All rights reserved.</p>
@@ -477,12 +500,12 @@ height: 100vh;
                 backgroundColor: 0x111827,
                 size: window.innerWidth < 768 ? 0.7 : 0.8
             };
-            
+
             return VANTA.GLOBE(vantaSettings);
         }
-        
+
         let vantaEffect = initVanta();
-        
+
         // Reinitialize on resize for better mobile performance
         window.addEventListener('resize', () => {
             if (vantaEffect) {
@@ -507,7 +530,7 @@ height: 100vh;
                 hero.style.transform = `translate(-${x * 20}px, -${y * 20}px) scale(1.05)`;
             }
         });
-// Initialize Feather Icons
+        // Initialize Feather Icons
         feather.replace();
     </script>
     <script>
@@ -555,7 +578,7 @@ height: 100vh;
         let isAnimating = false;
         const carousel = document.getElementById('carousel');
         const animationDuration = 500;
-        
+
         // Preload all images
         projects.forEach(project => {
             const img = new Image();
@@ -563,26 +586,26 @@ height: 100vh;
         });
         function calculateCardStyles(index, currentIndex, totalProjects) {
             const position = (index - currentIndex + totalProjects) % totalProjects;
-            const centerOffset = position > totalProjects/2 ? position - totalProjects : position;
-            
+            const centerOffset = position > totalProjects / 2 ? position - totalProjects : position;
+
             let scale = 1 - Math.abs(centerOffset) * 0.15;
             let opacity = 1 - Math.abs(centerOffset) * 0.3;
             let translateX = `${centerOffset * 30}%`;
             let zIndex = 10 - Math.abs(centerOffset) * 5;
             let blur = Math.abs(centerOffset) * 0.5;
-            
+
             // Ensure values are within bounds
             scale = Math.max(scale, 0.7);
             opacity = Math.max(opacity, 0);
             zIndex = Math.max(zIndex, 0);
-            
+
             // Responsive adjustments
             if (window.innerWidth < 768) {
                 scale = 1 - Math.abs(centerOffset) * 0.1;
                 opacity = 1 - Math.abs(centerOffset) * 0.4;
                 translateX = `${centerOffset * 40}%`;
             }
-            
+
             return {
                 transform: `translateX(${translateX}) scale(${scale})`,
                 opacity,
@@ -590,19 +613,19 @@ height: 100vh;
                 filter: `blur(${blur}px)`
             };
         }
-function renderCarousel() {
+        function renderCarousel() {
             carousel.innerHTML = '';
-            
+
             projects.forEach((project, index) => {
                 const styles = calculateCardStyles(index, currentIndex, projects.length);
-            const projectCard = document.createElement('div');
-            projectCard.className = 'carousel-item absolute transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] will-change-transform hover:z-20';
-projectCard.style.transform = styles.transform;
+                const projectCard = document.createElement('div');
+                projectCard.className = 'carousel-item absolute transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] will-change-transform hover:z-20';
+                projectCard.style.transform = styles.transform;
                 projectCard.style.opacity = styles.opacity;
                 projectCard.style.zIndex = styles.zIndex;
                 projectCard.style.filter = styles.filter;
                 projectCard.style.transition = 'transform 500ms cubic-bezier(0.25,0.1,0.25,1), opacity 500ms ease, filter 500ms ease';
-                
+
                 projectCard.innerHTML = `
                     <div class="project-card w-64 md:w-96 h- md:h-[28rem] mx-60">
                         <div class="project-inner w-full h-full bg-gray-700 rounded-xl overflow-hidden shadow-xl transform-style-preserve-3d transition-transform duration-300 ease-in-out">
@@ -616,41 +639,41 @@ projectCard.style.transform = styles.transform;
                         </div>
                     </div>
                 `;
-                
+
                 carousel.appendChild(projectCard);
             });
         }
         function navigateCarousel(direction) {
             if (isAnimating) return;
             isAnimating = true;
-            
+
             currentIndex = (currentIndex + direction + projects.length) % projects.length;
             renderCarousel();
-            
+
             // Clear any existing timeout to prevent overlap
             clearTimeout(window.carouselTimeout);
-            
+
             // Set new timeout
             window.carouselTimeout = setTimeout(() => {
                 isAnimating = false;
             }, animationDuration);
         }
-document.getElementById('nextBtn').addEventListener('click', () => navigateCarousel(-1));
+        document.getElementById('nextBtn').addEventListener('click', () => navigateCarousel(-1));
         document.getElementById('prevBtn').addEventListener('click', () => navigateCarousel(1));
-        
+
         // Touch support for mobile
         let touchStartX = 0;
         let touchEndX = 0;
-        
+
         carousel.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
-        }, {passive: true});
-        
+        }, { passive: true });
+
         carousel.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
-        }, {passive: true});
-        
+        }, { passive: true });
+
         function handleSwipe() {
             if (touchEndX < touchStartX - 50) {
                 navigateCarousel(-1);
@@ -659,26 +682,26 @@ document.getElementById('nextBtn').addEventListener('click', () => navigateCarou
                 navigateCarousel(1);
             }
         }
-            // Auto-rotate carousel with smoother transitions
-            let autoRotateInterval;
-            let rotationPaused = false;
-function startAutoRotate() {
+        // Auto-rotate carousel with smoother transitions
+        let autoRotateInterval;
+        let rotationPaused = false;
+        function startAutoRotate() {
             autoRotateInterval = setInterval(() => {
                 if (!isAnimating && !document.hidden && !rotationPaused) {
                     navigateCarousel(-1);
                 }
             }, 5000);
-}
+        }
         carousel.addEventListener('mouseenter', () => {
             rotationPaused = true;
             clearInterval(autoRotateInterval);
         });
-        
+
         carousel.addEventListener('mouseleave', () => {
             rotationPaused = false;
             startAutoRotate();
         });
-// Handle visibility changes
+        // Handle visibility changes
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
                 clearInterval(autoRotateInterval);
@@ -686,22 +709,23 @@ function startAutoRotate() {
                 startAutoRotate();
             }
         });
-        
+
         // Responsive adjustments
         function handleResize() {
             renderCarousel();
         }
-        
+
         window.addEventListener('resize', handleResize);
-        
+
         // Initialize
         renderCarousel();
         startAutoRotate();
-        
+
         // Initialize feather icons
         feather.replace();
-// Initialize feather icons
+        // Initialize feather icons
         feather.replace();
     </script>
 </body>
+
 </html>
