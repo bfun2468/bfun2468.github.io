@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,23 @@
         .project-card {
             transition: all 0.3s ease;
         }
+
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+
         .project-filter {
             transition: all 0.2s ease;
         }
+
         .project-filter.active {
             background-color: #3b82f6;
             color: white;
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
@@ -58,12 +63,18 @@
     <section class="py-12 bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
-                <button class="project-filter active px-6 py-2 rounded-full bg-blue-600 text-white" data-filter="all">All</button>
-                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600" data-filter="character">Characters</button>
-                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600" data-filter="environment">Environments</button>
-                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600" data-filter="prop">Props</button>
-                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600" data-filter="animation">Animation</button>
-                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600" data-filter="game">Game Design</button>
+                <button class="project-filter active px-6 py-2 rounded-full bg-blue-600 text-white"
+                    data-filter="all">All</button>
+                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600"
+                    data-filter="character">Characters</button>
+                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600"
+                    data-filter="environment">Environments</button>
+                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600"
+                    data-filter="prop">Props</button>
+                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600"
+                    data-filter="animation">Animation</button>
+                <button class="project-filter px-6 py-2 rounded-full bg-gray-700 hover:bg-gray-600"
+                    data-filter="game">Game Design</button>
             </div>
         </div>
     </section>
@@ -76,12 +87,14 @@
                 <div class="project-card" data-category="character" data-aos="fade-up">
                     <a href="project-detail.html?id=1" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/fantasy/640x360/201" alt="Cyberpunk Character" class="w-full h-full object-cover">
+                            <img src="http://static.photos/fantasy/640x360/201" alt="Cyberpunk Character"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-blue-400 text-sm">Character</span>
                             <h3 class="text-2xl font-bold mb-2">Cyberpunk Character</h3>
-                            <p class="text-gray-300">High-detailed character model with futuristic cybernetic enhancements.</p>
+                            <p class="text-gray-300">High-detailed character model with futuristic cybernetic
+                                enhancements.</p>
                         </div>
                     </a>
                 </div>
@@ -90,12 +103,14 @@
                 <div class="project-card" data-category="environment" data-aos="fade-up" data-aos-delay="100">
                     <a href="project-detail.html?id=2" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/cityscape/640x360/202" alt="Futuristic City" class="w-full h-full object-cover">
+                            <img src="http://static.photos/cityscape/640x360/202" alt="Futuristic City"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-purple-400 text-sm">Environment</span>
                             <h3 class="text-2xl font-bold mb-2">Futuristic City</h3>
-                            <p class="text-gray-300">Massive city environment with dynamic lighting and particle effects.</p>
+                            <p class="text-gray-300">Massive city environment with dynamic lighting and particle
+                                effects.</p>
                         </div>
                     </a>
                 </div>
@@ -104,7 +119,8 @@
                 <div class="project-card" data-category="prop" data-aos="fade-up" data-aos-delay="200">
                     <a href="project-detail.html?id=3" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/technology/640x360/203" alt="Sci-Fi Weapon" class="w-full h-full object-cover">
+                            <img src="http://static.photos/technology/640x360/203" alt="Sci-Fi Weapon"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-green-400 text-sm">Prop</span>
@@ -118,7 +134,8 @@
                 <div class="project-card" data-category="animation" data-aos="fade-up">
                     <a href="project-detail.html?id=4" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/people/640x360/204" alt="Character Animation" class="w-full h-full object-cover">
+                            <img src="http://static.photos/people/640x360/204" alt="Character Animation"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-yellow-400 text-sm">Animation</span>
@@ -132,12 +149,14 @@
                 <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="100">
                     <a href="project-detail.html?id=5" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/gaming/640x360/205" alt="Game Design" class="w-full h-full object-cover">
+                            <img src="http://static.photos/gaming/640x360/205" alt="Game Design"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-red-400 text-sm">Game Design</span>
                             <h3 class="text-2xl font-bold mb-2">Adventure Game</h3>
-                            <p class="text-gray-300">Complete game design with environment, characters, and mechanics.</p>
+                            <p class="text-gray-300">Complete game design with environment, characters, and mechanics.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -146,7 +165,8 @@
                 <div class="project-card" data-category="character" data-aos="fade-up" data-aos-delay="200">
                     <a href="project-detail.html?id=6" class="block">
                         <div class="bg-gray-700 rounded-xl overflow-hidden h-64">
-                            <img src="http://static.photos/fantasy/640x360/206" alt="Fantasy Creature" class="w-full h-full object-cover">
+                            <img src="http://static.photos/fantasy/640x360/206" alt="Fantasy Creature"
+                                class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <span class="text-blue-400 text-sm">Character</span>
@@ -203,9 +223,9 @@
                 // Update active state
                 filters.forEach(f => f.classList.remove('active', 'bg-blue-600', 'text-white'));
                 filter.classList.add('active', 'bg-blue-600', 'text-white');
-                
+
                 const category = filter.dataset.filter;
-                
+
                 // Filter projects
                 projects.forEach(project => {
                     if (category === 'all' || project.dataset.category === category) {
@@ -221,4 +241,5 @@
         feather.replace();
     </script>
 </body>
+
 </html>
