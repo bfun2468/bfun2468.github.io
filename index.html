@@ -167,7 +167,6 @@
                     <a href="#about" class="nav-link">About</a>
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                    <a href="projects.html" class="nav-link">All Projects</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
                     <i data-feather="menu"></i>
@@ -177,31 +176,44 @@
     </nav>
 
     <!-- Work Section -->
-    <section id="work" class="py-20 bg-gray-800 flex-wrap">
+    <section id="work" class="py-20 bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Featured Projects</h2>
+            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">
+                Featured Projects
+            </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
-                <!-- Project 1 -->
-                <a href="PastelTitan.html" class="block group">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up">
-                        <div class="h-64 relative overflow-hidden group">
-                            <img src="Pictures/Kart/FeaturedProjectsFonrtPage.jpg" alt="3D Project preview"
+                <!-- Project 1: Pastel Titan -->
+                <a href="PastelTitan.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <img src="Pictures/Kart/FeaturedProjectsFonrtPage.jpg" alt="Pastel Titan preview"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="Pictures/Logos/Unity.png"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                            <!-- Hover Overlay -->
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     View Project
                                 </div>
                             </div>
                         </div>
-                        <div class="p-6">
+
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-bold mb-2">Pastel Titan</h3>
-                            <p class="text-gray-300 mb-4">High-poly 3D character with detailed textures and rigging for
-                                game animation.</p>
-                            <div class="flex flex-wrap gap-2">
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                Pastel Titan is a stylized kart built from painting tools — brushes, palettes, and art
+                                supplies — reimagined as vehicle parts. Its soft pastel tones and handcrafted details
+                                give it a playful, creative look with a strong visual identity.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
@@ -211,30 +223,37 @@
                     </div>
                 </a>
 
-                <!-- Project 2 -->
-                <a href="SkyHaven.html" class="block group">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="h-64 relative overflow-hidden group" style="width: 100%; margin: 0 auto;">
-                            <!-- Main Preview Image -->
-                            <img src="Pictures/SkyHaven/SkyHaven Front.gif" alt="3D Project preview"
+                <!-- Project 2: SkyHaven Studios -->
+                <a href="SkyHaven.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <img src="Pictures/SkyHaven/SkyHaven Front.gif" alt="SkyHaven preview"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <!-- SkyHaven Logo (Top Right Corner) -->
                             <img src="Pictures/SkyHaven/Logo.png" alt="SkyHaven Logo"
                                 class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                            <img src="Pictures/Logos/Godot.png" alt="Godot Logo"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
                             <!-- Hover Overlay -->
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     View Project
                                 </div>
                             </div>
                         </div>
-                        <div class="p-6">
+
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-bold mb-2">SkyHaven Studios</h3>
-                            <p class="text-gray-300 mb-4">My internship and summer job at SkyHaven Studios.</p>
-                            <div class="flex flex-wrap gap-2">
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                My internship and summer job at SkyHaven Studios. I worked on Cosmos as a 3D animator,
+                                handling rigging, modeling, animation, and technical art while optimizing assets and
+                                pipelines.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Godot</span>
@@ -247,25 +266,36 @@
                     </div>
                 </a>
 
-                <!-- Project 3 -->
-                <a href="FluffyNature.html" class="block group">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="h-64 relative overflow-hidden group" style="width: 100%; margin: 0 auto;">
-                            <img src="Pictures/FluffyNature/FluffyNatureFrontPic.gif" alt="3D Project preview"
+                <!-- Project 3: Fluffy Nature -->
+                <a href="FluffyNature.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
+                                alt="Fluffy Nature preview"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="Pictures/Logos/Unity.png"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                            <!-- Hover Overlay -->
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <button
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <div
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     View Project
-                                </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-6">
+
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-bold mb-2">Fluffy Nature</h3>
-                            <p class="text-gray-300 mb-4">Modular nature environment scene</p>
-                            <div class="flex flex-wrap gap-2">
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                Fluffy Nature is a stylized outdoor scene built in Unity using custom shaders, VFX, and
+                                dynamic lighting. It combines hand-crafted assets with subtle motion and visual effects
+                                to bring the environment to life.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
                                 <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
@@ -274,10 +304,132 @@
                         </div>
                     </div>
                 </a>
+                <!-- Project 4: Vibe For Life -->
+                <a href="VFL.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <video id="vflTrailer" src="Pictures/VFL/VFL Trailer.mp4" alt="Fluffy Nature preview"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                autoplay loop muted playsinline></video>
+                            <img src="Pictures/Logos/WFL.png" alt="WFL Logo"
+                                class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                            <img src="Pictures/Logos/Unity.png"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    View Project
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Vibe For Life</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                Vibe For Life is a 3D mobile runner/flyer game where players control a parrot flying
+                                trough a festival. Dodge obstacles, collect coins and power-ups and reach the highest
+                                score possible!
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Perforce</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Visual Studios</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">HacknPlan</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 5: Blizzy -->
+                <a href="Blizzy.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <img src="Pictures/Robuddy/RobuddyFrontPic.png" alt="Blizzy preview"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="Pictures/Logos/Unity.png"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    View Project
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Blizzy</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                Blizzy is the robuddy to deal with all your snow problems. He is your friendly
+                                neighborhood robot that helps you clear snow from your driveway and walkways with ease.
+                                With Blizzy by your side, winter chores become a breeze!
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 6: Ancient Tides -->
+                <a href="AncientTides.html" class="block group h-full">
+                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <!-- Image Section -->
+                        <div class="h-64 relative overflow-hidden">
+                            <video id="ancientTidesVideo" src="Pictures/AncientTides/AncientTides.mp4"
+                                alt="Ancient Tides preview"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                autoplay loop muted playsinline></video>
+                            <img src="Pictures/Logos/TresMuseos.png" alt="3museos Logo"
+                                class="absolute top-3 right-3 w-12 h-12 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                            <img src="Pictures/Logos/Unity.png"
+                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    View Project
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Ancient Tides</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">
+                                A singleplayer underwater adventure game where you explore a new part of the sea that
+                                opened up after the tectonic plates moved. Tons of ancient fish and mammals are yet to
+                                be discovered!
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Photoshop</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">HacknPlan</span>
+                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Github</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
+    <!-- The Imperial Dragon Spear is a legendary weapon inspired by the World of Warcraft style.
+                                Adorned with detailed textures and a majestic dragon motif, it symbolizes strength and
+                                honor among the elegant, battle-ready Blood Elves. -->
 
     <!-- Projects Carousel -->
     <section id="work" class="py-20 px-6 bg-gray-800">
@@ -879,6 +1031,18 @@
             });
         });
 
+    </script>
+    <script>
+        const vflVideo = document.getElementById('vflTrailer');
+        vflVideo.addEventListener('loadedmetadata', () => {
+            vflVideo.currentTime = 30; // start at 5 seconds
+        });
+    </script>
+    <script>
+        const acientTidesVideo = document.getElementById('ancientTidesVideo');
+        acientTidesVideo.addEventListener('loadedmetadata', () => {
+            acientTidesVideo.currentTime = 30; // start at 5 seconds
+        });
     </script>
 </body>
 
