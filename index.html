@@ -109,14 +109,13 @@
 </head>
 
 <body class="bg-gray-900 text-white">
-    <!-- Hero Section with Vanta.js Background -->
-    <section id="hero" class="hero-section flex items-center justify-center bg-cover bg-center relative min-h-screen"
-        style="
-        background-image: url('FrontPage.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;">
+    <!-- Hero Section with Responsive Background -->
+    <section id="hero" class="hero-section flex items-center justify-center relative min-h-screen overflow-hidden">
+        <!-- Background image as <img> instead of CSS background -->
+        <img src="FrontPage.jpg" alt="Background"
+            class="absolute inset-0 w-full h-full object-contain md:object-cover" />
 
+        <!-- Hero content -->
         <div class="relative z-10 text-center px-4">
             <h1 class="text-5xl md:text-7xl font-bold mb-4 cursor-pointer transition head-link" data-aos="fade-down"
                 id="hero-name" style="--hover-color: #ffffff;"
@@ -124,785 +123,735 @@
                 onmouseout="this.style.color=''">
                 BRAM VERSCHAEVE
             </h1>
-            </h1>
+
             <script>
                 document.getElementById('hero-name').addEventListener('click', function (e) {
                     e.preventDefault();
                     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
                 });
             </script>
+
             <div class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
                 <span class="text" style="color: #54d1d3;">3D Generalist</span> •
                 <span class="text" style="color: #da5fb5;">Game Animator</span> •
                 <span class="text" style="color: #d4bf47;">Game Designer</span>
             </div>
+
             <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="#work" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium">View Work</a>
-                <script>
-                    document.querySelector('a[href="#work"]').addEventListener('click', function (e) {
-                        e.preventDefault();
-                        document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
-                    });
-                </script>
+                <a href="#work" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition"
+                    onclick="event.preventDefault(); document.getElementById('work').scrollIntoView({ behavior: 'smooth' });">View
+                    Work</a>
+
                 <a href="#contact"
-                    class="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 rounded-full font-medium transition scroll-smooth">Contact
+                    class="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 rounded-full font-medium transition"
+                    onclick="event.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact
                     Me</a>
-                <script>
-                    document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
-                        e.preventDefault();
-                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-                    });
-                </script>
             </div>
         </div>
     </section>
+</body>
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">BV</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#work" class="nav-link">Work</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+
+<!-- Navigation -->
+<nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">BV</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Work Section -->
+<section id="work" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center text-white-400" data-aos="fade-up">
+            Featured Projects
+        </h2>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+
+            <!-- Project 1: Pastel Titan -->
+            <a href="PastelTitan.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <!-- Image Section -->
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="Pictures/Kart/FeaturedProjectsFonrtPage.jpg" alt="Pastel Titan preview"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="Pictures/Logos/Unity.png"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Section -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Pastel Titan</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            A stylized kart built from painting tools — brushes, palettes, and art supplies — reimagined
+                            as vehicle parts. Its soft pastel tones and handcrafted details give it a playful, creative
+                            look.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span
+                                class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">SubstancePainter</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Unity</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">PureRef</span>
+                        </div>
+                    </div>
                 </div>
-                <button class="md:hidden focus:outline-none">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
+            </a>
+
+            <!-- Project 2: SkyHaven Studios -->
+            <a href="SkyHaven.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="Pictures/SkyHaven/SkyHaven Front.gif" alt="SkyHaven preview"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="Pictures/SkyHaven/Logo.png" alt="SkyHaven Logo"
+                            class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                        <img src="Pictures/Logos/Godot.png" alt="Godot Logo"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">SkyHaven Studios</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            Internship and freelance work for SkyHaven Studios — contributing to Cosmos as a 3D
+                            animator, handling rigging, modeling, animation, and technical art while optimizing assets
+                            and workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span
+                                class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">SubstancePainter</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Godot</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Github</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Huly</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Clockify</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">PureRef</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3: Fluffy Nature -->
+            <a href="FluffyNature.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
+                            alt="Fluffy Nature preview"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="Pictures/Logos/Unity.png"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Fluffy Nature</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            A stylized outdoor scene built in Unity using custom shaders, VFX, and dynamic lighting.
+                            Hand-crafted assets and subtle motion effects bring the environment to life.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span
+                                class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">SubstancePainter</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Unity</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">TreeIt</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 4: Vibe For Life -->
+            <a href="VFL.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <div class="h-64 relative overflow-hidden">
+                        <video id="vflTrailer" src="Pictures/VFL/VFL_Trailer.mp4"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            autoplay loop muted playsinline></video>
+                        <img src="Pictures/Logos/WFL.png" alt="WFL Logo"
+                            class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                        <img src="Pictures/Logos/Unity.png"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Vibe For Life</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            A 3D mobile runner/flyer game where players control a parrot flying through a festival.
+                            Dodge obstacles, collect power-ups, and reach the highest score possible!
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span
+                                class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">SubstancePainter</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Unity</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Perforce</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Visual Studios</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">HacknPlan</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 5: Blizzy -->
+            <a href="Blizzy.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="Pictures/Robuddy/RobuddyFrontPic.png" alt="Blizzy preview"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="Pictures/Logos/Unity.png"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Blizzy</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            Blizzy is your friendly winter companion — a snowblower robot designed to clear paths with a
+                            smile. Built with animation and PBR workflow in mind, this project was my introduction to
+                            rigging and rendering.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span
+                                class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">SubstancePainter</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Unity</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 6: Ancient Tides -->
+            <a href="AncientTides.html" class="block group h-full">
+                <div class="portfolio-item rounded-xl overflow-hidden flex flex-col h-full
+  border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300
+  bg-gradient-to-b from-[#242e3c] to-[#232d3b]">
+
+                    <div class="h-64 relative overflow-hidden">
+                        <video id="ancientTidesVideo" src="Pictures/AncientTides/AncientTides.mp4"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            autoplay loop muted playsinline></video>
+                        <img src="Pictures/Logos/TresMuseos.png" alt="3museos Logo"
+                            class="absolute top-3 right-3 w-12 h-12 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                        <img src="Pictures/Logos/Unity.png"
+                            class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div
+                                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                View Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Ancient Tides</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">
+                            A single-player underwater exploration game where you uncover a newly opened region of the
+                            sea after tectonic shifts. Discover ancient marine species and lost mysteries beneath the
+                            waves.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Blender</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Photoshop</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Unity</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">HacknPlan</span>
+                            <span class="px-3 py-1 bg-gray-600 rounded-full text-sm text-gray-200">Github</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Work Section -->
-    <section id="work" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">
-                Featured Projects
-            </h2>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-
-                <!-- Project 1: Pastel Titan -->
-                <a href="PastelTitan.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <img src="Pictures/Kart/FeaturedProjectsFonrtPage.jpg" alt="Pastel Titan preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <img src="Pictures/Logos/Unity.png"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">Pastel Titan</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                Pastel Titan is a stylized kart built from painting tools — brushes, palettes, and art
-                                supplies — reimagined as vehicle parts. Its soft pastel tones and handcrafted details
-                                give it a playful, creative look with a strong visual identity.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">PureRef</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 2: SkyHaven Studios -->
-                <a href="SkyHaven.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <img src="Pictures/SkyHaven/SkyHaven Front.gif" alt="SkyHaven preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <img src="Pictures/SkyHaven/Logo.png" alt="SkyHaven Logo"
-                                class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                            <img src="Pictures/Logos/Godot.png" alt="Godot Logo"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">SkyHaven Studios</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                My internship and summer job at SkyHaven Studios. I worked on Cosmos as a 3D animator,
-                                handling rigging, modeling, animation, and technical art while optimizing assets and
-                                pipelines.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Godot</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Github</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Huly</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Clockify</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">PureRef</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 3: Fluffy Nature -->
-                <a href="FluffyNature.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
-                                alt="Fluffy Nature preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <img src="Pictures/Logos/Unity.png"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">Fluffy Nature</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                Fluffy Nature is a stylized outdoor scene built in Unity using custom shaders, VFX, and
-                                dynamic lighting. It combines hand-crafted assets with subtle motion and visual effects
-                                to bring the environment to life.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">TreeIt</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- Project 4: Vibe For Life -->
-                <a href="VFL.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <video id="vflTrailer" src="Pictures/VFL/VFL_Trailer.mp4" alt="Fluffy Nature preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                autoplay loop muted playsinline></video>
-                            <img src="Pictures/Logos/WFL.png" alt="WFL Logo"
-                                class="absolute top-3 right-3 w-28 h-20 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                            <img src="Pictures/Logos/Unity.png"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">Vibe For Life</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                Vibe For Life is a 3D mobile runner/flyer game where players control a parrot flying
-                                trough a festival. Dodge obstacles, collect coins and power-ups and reach the highest
-                                score possible!
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Perforce</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Visual Studios</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">HacknPlan</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- Project 5: Blizzy -->
-                <a href="Blizzy.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <img src="Pictures/Robuddy/RobuddyFrontPic.png" alt="Blizzy preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <img src="Pictures/Logos/Unity.png"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">Blizzy</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                Blizzy is the robuddy to deal with all your snow problems. He is your friendly
-                                neighborhood robot that helps you clear snow from your driveway and walkways with ease.
-                                With Blizzy by your side, winter chores become a breeze!
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">SubstancePainter</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- Project 6: Ancient Tides -->
-                <a href="AncientTides.html" class="block group h-full">
-                    <div class="portfolio-item bg-gray-700 rounded-xl overflow-hidden flex flex-col h-full"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <!-- Image Section -->
-                        <div class="h-64 relative overflow-hidden">
-                            <video id="ancientTidesVideo" src="Pictures/AncientTides/AncientTides.mp4"
-                                alt="Ancient Tides preview"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                autoplay loop muted playsinline></video>
-                            <img src="Pictures/Logos/TresMuseos.png" alt="3museos Logo"
-                                class="absolute top-3 right-3 w-12 h-12 object-contain rounded-lg shadow-lg bg-black/40 p-1 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                            <img src="Pictures/Logos/Unity.png"
-                                class="absolute bottom-1 right-0 w-20 h-16 object-contain rounded-lg p-1 transition-transform duration-300 group-hover:scale-110">
-                            <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-2xl font-bold mb-2">Ancient Tides</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">
-                                A singleplayer underwater adventure game where you explore a new part of the sea that
-                                opened up after the tectonic plates moved. Tons of ancient fish and mammals are yet to
-                                be discovered!
-                            </p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Blender</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Photoshop</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Unity</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">HacknPlan</span>
-                                <span class="px-3 py-1 bg-gray-600 rounded-full text-sm">Github</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- The Imperial Dragon Spear is a legendary weapon inspired by the World of Warcraft style.
+<!-- The Imperial Dragon Spear is a legendary weapon inspired by the World of Warcraft style.
                                 Adorned with detailed textures and a majestic dragon motif, it symbolizes strength and
                                 honor among the elegant, battle-ready Blood Elves. -->
 
-    <!-- Projects Carousel -->
-    <section id="work" class="py-20 px-6 bg-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-8 md:mb-16 text-center" data-aos="fade-up">More Projects</h2>
+<!-- Projects Carousel -->
+<section id="work" class="py-20 px-6 bg-gray-800">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8 md:mb-16 text-center" data-aos="fade-up">More Projects</h2>
 
-            <div class="relative h-[24rem] md:h-[32rem]">
-                <div id="carousel" class="absolute w-full h-full flex items-center justify-center overflow-hidden"
-                    data-aos="fade-up">
-                    <!-- Project cards will be added here by JavaScript -->
-                </div>
-                <button id="prevBtn"
-                    class="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition"
-                    data-aos="fade-up">
-                    <i data-feather="chevron-left" class="w-4 h-4 md:w-6 md:h-6"></i>
-                </button>
-                <button id="nextBtn"
-                    class="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition"
-                    data-aos="fade-up">
-                    <i data-feather="chevron-right" class="w-4 h-4 md:w-6 md:h-6"></i>
-                </button>
+        <div class="relative h-[24rem] md:h-[32rem]">
+            <div id="carousel" class="absolute w-full h-full flex items-center justify-center overflow-hidden"
+                data-aos="fade-up">
+                <!-- Project cards will be added here by JavaScript -->
             </div>
-            <div class="text-center mt-12" data-aos="fade-up">
-                <a href="projects.html"
-                    class="inline-flex items-center px-6 py-3 border-2 border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition">
-                    View All Projects
-                    <i data-feather="arrow-right" class="ml-2"></i>
-                </a>
+            <button id="prevBtn"
+                class="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition"
+                data-aos="fade-up">
+                <i data-feather="chevron-left" class="w-4 h-4 md:w-6 md:h-6"></i>
+            </button>
+            <button id="nextBtn"
+                class="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-70 p-2 md:p-3 rounded-full hover:bg-indigo-600 transition"
+                data-aos="fade-up">
+                <i data-feather="chevron-right" class="w-4 h-4 md:w-6 md:h-6"></i>
+            </button>
+        </div>
+        <div class="text-center mt-12" data-aos="fade-up">
+            <a href="projects.html"
+                class="inline-flex items-center px-6 py-3 border-2 border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition">
+                View All Projects
+                <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
+                <div class="relative inline-block">
+                    <!-- Profile Picture (slightly larger) -->
+                    <div
+                        class="w-96 h-96 rounded-full mx-auto lg:mx-0 border-4 border-blue-500 overflow-hidden flex items-center justify-center bg-blue-500">
+                        <img src="Pictures\ProfilePicture\ProfilePicture.jpg" alt="Profile Picture"
+                            class="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <!-- Purple Circle (moved closer) -->
+                    <div class="absolute -bottom-8 -right-16 lg:mx-0 border-4 border-purple-500 w- h-36 rounded-full ">
+                        <img src="Pictures\ProfilePicture\ClimbingPicture.jpg" alt="Profile Picture"
+                            class="w-full h-full object-cover rounded-full" />
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
+                <h2 class="text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-gray-300 mb-6">
+                    I am Bram Verschaeve and I am a Game developer and digital artist with 2+ years of experience in
+                    making games. I love bringing my sketches and ideas to life and want to share this with others.
+                    I am currently pursuing a career as digital artist and want to broaden my horizons as much as
+                    possible. My diverse experiences in studies allowed me to have a realistic view and sharpen my
+                    communication and time management skills. I am very passionate and try to aim for the best of my
+                    capabilities.
+                </p>
+                <p class="text-gray-300 mb-8">
+                    I specialize in 3D modeling, texturing, rigging and animation for games. I am proficient in
+                    tools like Blender, Substance Painter, and Unity. I am always eager to learn new techniques and
+                    stay updated with industry trends to deliver high-quality work.
+                </p>
+                <p class="text-gray-300 mb-8">
+                    Outside of work, I’m an avid boulderer and gamer. Bouldering helps me stay physically in shape
+                    while improving my focus and discipline. I often enjoy outdoor bouldering in forests, where I
+                    find inspiration and balance through nature and movement. Gaming, on the other hand, keeps my
+                    creativity sharp and motivates me to keep pushing the boundaries of interactive design.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/bram-verschaeve-89508b1b5"
+                        class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/verschaevebram"
+                        class="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="https://github.com/bfun2468"
+                        class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://x.com/VerschaeveBram"
+                        class="w-10 h-10 bg-gray-700 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
-                    <div class="relative inline-block">
-                        <!-- Profile Picture (slightly larger) -->
-                        <div
-                            class="w-96 h-96 rounded-full mx-auto lg:mx-0 border-4 border-blue-500 overflow-hidden flex items-center justify-center bg-blue-500">
-                            <img src="Pictures\ProfilePicture\ProfilePicture.jpg" alt="Profile Picture"
-                                class="w-full h-full object-cover rounded-full" />
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
+
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Blender.png" class="w-10 h-8 mb-2 text-blue-400"></i>
+                <span>Blender</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\maya.png" class="w-9 h-8 mb-2 text-purple-400"></i>
+                <span>Maya</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Photoshop.png" class="w-8 h-8 mb-2 text-green-400"></i>
+                <span>Photoshop</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\substance.png" class="w-8 h-8 mb-2 text-yellow-400"></i>
+                <span>Substance</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Unreal.png" class="w-9 h-9 mb-2 text-red-400"></i>
+                <span>Unreal</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Unity.png" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>Unity</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Github.png" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>Github</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Perforce.jpeg" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>Perforce</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Tree IT.png" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>TreeIt</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\Csharp.png" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>C#</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <img src="Pictures\Logos\PureRef.png" class="w-9 h-9 mb-2 text-blue-400"></i>
+                <span>PureRef</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i data-feather="mail" class="w-6 h-6 mr-4 text-blue-400"></i>
+                        <div>
+                            <h4 class="font-medium">Email</h4>
+                            <p class="text-gray-400">brami.verschaeve@gmail.com</p>
                         </div>
-                        <!-- Purple Circle (moved closer) -->
-                        <div
-                            class="absolute -bottom-8 -right-16 lg:mx-0 border-4 border-purple-500 w- h-36 rounded-full ">
-                            <img src="Pictures\ProfilePicture\ClimbingPicture.jpg" alt="Profile Picture"
-                                class="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="phone" class="w-6 h-6 mr-4 text-purple-400"></i>
+                        <div>
+                            <h4 class="font-medium">Phone</h4>
+                            <p class="text-gray-400">+32 479 53 81 35</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="map-pin" class="w-6 h-6 mr-4 text-green-400"></i>
+                        <div>
+                            <h4 class="font-medium">Location</h4>
+                            <p class="text-gray-400">Zonnebeke, West Vlaanderen, Belgium</p>
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-6">About Me</h2>
-                    <p class="text-gray-300 mb-6">
-                        I am Bram Verschaeve and I am a Game developer and digital artist with 2+ years of experience in
-                        making games. I love bringing my sketches and ideas to life and want to share this with others.
-                        I am currently pursuing a career as digital artist and want to broaden my horizons as much as
-                        possible. My diverse experiences in studies allowed me to have a realistic view and sharpen my
-                        communication and time management skills. I am very passionate and try to aim for the best of my
-                        capabilities.
-                    </p>
-                    <p class="text-gray-300 mb-8">
-                        I specialize in 3D modeling, texturing, rigging and animation for games. I am proficient in
-                        tools like Blender, Substance Painter, and Unity. I am always eager to learn new techniques and
-                        stay updated with industry trends to deliver high-quality work.
-                    </p>
-                    <p class="text-gray-300 mb-8">
-                        Outside of work, I’m an avid boulderer and gamer. Bouldering helps me stay physically in shape
-                        while improving my focus and discipline. I often enjoy outdoor bouldering in forests, where I
-                        find inspiration and balance through nature and movement. Gaming, on the other hand, keeps my
-                        creativity sharp and motivates me to keep pushing the boundaries of interactive design.
-                    </p>
+
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
                     <div class="flex space-x-4">
                         <a href="https://www.linkedin.com/in/bram-verschaeve-89508b1b5"
-                            class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+                            class="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
                             <i data-feather="linkedin"></i>
                         </a>
                         <a href="https://www.instagram.com/verschaevebram"
-                            class="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
+                            class="w-12 h-12 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
                             <i data-feather="instagram"></i>
                         </a>
                         <a href="https://github.com/bfun2468"
-                            class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition">
+                            class="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition">
                             <i data-feather="github"></i>
                         </a>
                         <a href="https://x.com/VerschaeveBram"
-                            class="w-10 h-10 bg-gray-700 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+                            class="w-12 h-12 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
                             <i data-feather="twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Bfun-rv9ze"
+                            class="w-12 h-12 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
+                            <i data-feather="youtube"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">My Skills</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-6">3D Art</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Modeling</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Texturing</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-purple-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Rigging</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-green-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
+            <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
+                <form action="https://formspree.io/f/xrbyydzo" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block mb-2 font-medium">Name</label>
+                        <input type="text" name="name" id="name" required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
                     </div>
-                </div>
-
-                <div data-aos="fade-left">
-                    <h3 class="text-2xl font-bold mb-6">Animation & Design</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Character Animation</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-yellow-500 h-2 rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Game Design</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-red-500 h-2 rounded-full" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Sculpting</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="skill-bar bg-pink-500 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
+                    <div>
+                        <label for="email" class="block mb-2 font-medium">Email</label>
+                        <input type="email" name="email" id="email" required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
                     </div>
-                </div>
-            </div>
-
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Blender.png" class="w-10 h-8 mb-2 text-blue-400"></i>
-                    <span>Blender</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\maya.png" class="w-9 h-8 mb-2 text-purple-400"></i>
-                    <span>Maya</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Photoshop.png" class="w-8 h-8 mb-2 text-green-400"></i>
-                    <span>Photoshop</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\substance.png" class="w-8 h-8 mb-2 text-yellow-400"></i>
-                    <span>Substance</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Unreal.png" class="w-9 h-9 mb-2 text-red-400"></i>
-                    <span>Unreal</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Unity.png" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>Unity</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Github.png" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>Github</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Perforce.jpeg" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>Perforce</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Tree IT.png" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>TreeIt</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\Csharp.png" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>C#</span>
-                </div>
-                <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
-                    <img src="Pictures\Logos\PureRef.png" class="w-9 h-9 mb-2 text-blue-400"></i>
-                    <span>PureRef</span>
-                </div>
+                    <div>
+                        <label for="subject" class="block mb-2 font-medium">Subject</label>
+                        <input type="text" name="subject" id="subject"
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 font-medium">Message</label>
+                        <textarea name="message" id="message" rows="5" required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full px-6 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
+                        Send Message
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Get In Touch</h2>
-
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i data-feather="mail" class="w-6 h-6 mr-4 text-blue-400"></i>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-gray-400">brami.verschaeve@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i data-feather="phone" class="w-6 h-6 mr-4 text-purple-400"></i>
-                            <div>
-                                <h4 class="font-medium">Phone</h4>
-                                <p class="text-gray-400">+32 479 53 81 35</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-green-400"></i>
-                            <div>
-                                <h4 class="font-medium">Location</h4>
-                                <p class="text-gray-400">Zonnebeke, West Vlaanderen, Belgium</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-12">
-                        <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
-                        <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/bram-verschaeve-89508b1b5"
-                                class="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
-                                <i data-feather="linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/verschaevebram"
-                                class="w-12 h-12 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition">
-                                <i data-feather="instagram"></i>
-                            </a>
-                            <a href="https://github.com/bfun2468"
-                                class="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition">
-                                <i data-feather="github"></i>
-                            </a>
-                            <a href="https://x.com/VerschaeveBram"
-                                class="w-12 h-12 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
-                                <i data-feather="twitter"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@Bfun-rv9ze"
-                                class="w-12 h-12 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
-                                <i data-feather="youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
-                    <form action="https://formspree.io/f/xrbyydzo" method="POST" class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2 font-medium">Name</label>
-                            <input type="text" name="name" id="name" required
-                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-2 font-medium">Email</label>
-                            <input type="email" name="email" id="email" required
-                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 font-medium">Subject</label>
-                            <input type="text" name="subject" id="subject"
-                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-2 font-medium">Message</label>
-                            <textarea name="message" id="message" rows="5" required
-                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full px-6 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+<!-- Footer -->
+<footer class="py-12 bg-gray-950">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="text-2xl font-bold">BV</div>
+                <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#work" class="text-gray-400 hover:text-white transition">Work</a>
+                <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                <a href="projects.html" class="text-blue-400 hover:text-blue-300 transition">All Projects</a>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                    <a href="projects.html" class="text-blue-400 hover:text-blue-300 transition">All Projects</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
-                </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        // Responsive Vanta.js initialization
-        function initVanta() {
-            const vantaSettings = {
-                el: "#vanta-bg",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: window.innerWidth < 768 ? 0.8 : 1.00,
-                color: 0x3b82f6,
-                backgroundColor: 0x111827,
-                size: window.innerWidth < 768 ? 0.7 : 0.8
-            };
+<script>
+    // Responsive Vanta.js initialization
+    function initVanta() {
+        const vantaSettings = {
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: window.innerWidth < 768 ? 0.8 : 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x111827,
+            size: window.innerWidth < 768 ? 0.7 : 0.8
+        };
 
-            return VANTA.GLOBE(vantaSettings);
+        return VANTA.GLOBE(vantaSettings);
+    }
+
+    let vantaEffect = initVanta();
+
+    // Reinitialize on resize for better mobile performance
+    window.addEventListener('resize', () => {
+        if (vantaEffect) {
+            vantaEffect.destroy();
+        }
+        vantaEffect = initVanta();
+    });
+    // Initialize AOS animations
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: true
+    });
+
+    // Parallax effect
+    document.addEventListener('mousemove', (e) => {
+        const hero = document.querySelector('.parallax-bg');
+        if (hero) {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            hero.style.transform = `translate(-${x * 20}px, -${y * 20}px) scale(1.05)`;
+        }
+    });
+    // Initialize Feather Icons
+    feather.replace();
+</script>
+<script>
+    // Project data
+    const projects = [
+        {
+            id: 1,
+            title: "Imperial Dragon Spear",
+            category: "Weapon",
+            image: "Pictures/ImperialDragonSpear/Spear.png",
+            description: "A Mythical weapon created in the style of World of Warcraft. A weapon worthy for the ruler of the blood elves.",
+            link: "https://sketchfab.com/3d-models/dae-imperial-dragon-spear-weaponcraft-2d09c25252cd4642a93df4bbaece4f87"
+        },
+        {
+            id: 2,
+            title: "5 Simple Props",
+            category: "Props",
+            image: "Pictures/5Props/5Props.png",
+            description: "My first ever game ready props fitting for a forest scene.",
+            link: "https://sketchfab.com/3d-models/dae-5-finished-props-forest-loner-a70524156b604749a85bb1737be10558"
+        },
+        {
+            id: 3,
+            title: "Stylised Ryan ST-M",
+            category: "Vehicle",
+            image: "Pictures/Plane/plane.png",
+            description: "My first stylised model with basic animations and a toon effect.",
+            link: "https://sketchfab.com/3d-models/dae-flying-circus-ryan-st-m-b93f57cf79984ffb8048f95c6be2ad15"
+        },
+        {
+            id: 4,
+            title: "Lumière Palace",
+            category: "Scene",
+            image: "Pictures/Bazaar/Bazaar.png",
+            description: "A stylised lamps and candles shop, get all your lighting needs here.",
+            link: "https://sketchfab.com/3d-models/dae-bazaar-lumiere-palace-81aad5a9a78e4027a8b783c46ff79d47"
+        },
+        {
+            id: 5,
+            title: "Echo Cave",
+            category: "Game",
+            image: "Pictures/EchoCave/EchoCave.png",
+            description: "Dodge and weave trough tunnels by using your sonar. Try to get the highest score!",
+            link: "https://bfun2468.itch.io/echo-cave"
+        },
+        {
+            id: 6,
+            title: "Circle 9",
+            category: "Game",
+            image: "Pictures/Circle9/Circle9.png",
+            description: "A quick zombie shooter storygame, collect all the skulls and fight the boss! ",
+            link: "https://teledev.itch.io/circle-9"
+        },
+        {
+            id: 7,
+            title: "Rocket Rampage",
+            category: "Game",
+            image: "Pictures/RocketRampage/RocketRampage.png",
+            description: "Bomb, or be bombed. Grow bigger, restore fuel and hit you target. Don't miss!",
+            link: "https://dralisz.itch.io/rocket-rampage"
+        }
+    ];
+
+    // Initialize carousel with smooth transitions
+    let currentIndex = 0;
+    let isAnimating = false;
+    const carousel = document.getElementById('carousel');
+    const animationDuration = 500;
+
+    // Preload all images
+    projects.forEach(project => {
+        const img = new Image();
+        img.src = project.image;
+    });
+    function calculateCardStyles(index, currentIndex, totalProjects) {
+        const position = (index - currentIndex + totalProjects) % totalProjects;
+        const centerOffset = position > totalProjects / 2 ? position - totalProjects : position;
+
+        let scale = 1 - Math.abs(centerOffset) * 0.15;
+        let opacity = 1 - Math.abs(centerOffset) * 0.34;
+        let translateX = `${centerOffset * 60}%`;
+        let zIndex = 10 - Math.abs(centerOffset) * 5;
+        let blur = Math.abs(centerOffset) * 0.5;
+
+        // Ensure values are within bounds
+        scale = Math.max(scale, 0.7);
+        opacity = Math.max(opacity, 0);
+        zIndex = Math.max(zIndex, 0);
+
+        // Responsive adjustments
+        if (window.innerWidth < 768) {
+            scale = 1 - Math.abs(centerOffset) * 0.1;
+            opacity = 1 - Math.abs(centerOffset) * 0.4;
+            translateX = `${centerOffset * 40}%`;
         }
 
-        let vantaEffect = initVanta();
+        return {
+            transform: `translateX(${translateX}) scale(${scale})`,
+            opacity,
+            zIndex,
+            filter: `blur(${blur}px)`
+        };
+    }
+    function renderCarousel() {
+        // Render only once
+        carousel.innerHTML = '';
 
-        // Reinitialize on resize for better mobile performance
-        window.addEventListener('resize', () => {
-            if (vantaEffect) {
-                vantaEffect.destroy();
-            }
-            vantaEffect = initVanta();
-        });
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: true
-        });
+        projects.forEach((project, index) => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'carousel-item absolute transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] will-change-transform hover:z-20 overflow-hidden rounded-xl';
 
-        // Parallax effect
-        document.addEventListener('mousemove', (e) => {
-            const hero = document.querySelector('.parallax-bg');
-            if (hero) {
-                const x = e.clientX / window.innerWidth;
-                const y = e.clientY / window.innerHeight;
-                hero.style.transform = `translate(-${x * 20}px, -${y * 20}px) scale(1.05)`;
-            }
-        });
-        // Initialize Feather Icons
-        feather.replace();
-    </script>
-    <script>
-        // Project data
-        const projects = [
-            {
-                id: 1,
-                title: "Blizzy",
-                category: "Character",
-                image: "Pictures/Robuddy/RobuddyFrontPic.png",
-                description: "A futuristic city environment with neon lights and advanced architecture."
-            },
-            {
-                id: 2,
-                title: "Imperial Dragon Spear",
-                category: "Weapon",
-                image: "http://static.photos/fantasy/640x360/102",
-                description: "Mythical creature design with intricate details and textures."
-            },
-            {
-                id: 3,
-                title: "Sci-Fi Weapon",
-                category: "Prop",
-                image: "http://static.photos/technology/640x360/103",
-                description: "High-tech weapon design with realistic materials and lighting."
-            },
-            {
-                id: 4,
-                title: "Ancient Ruins",
-                category: "Environment",
-                image: "http://static.photos/architecture/640x360/104",
-                description: "Abandoned temple ruins with overgrown vegetation and atmospheric lighting."
-            },
-            {
-                id: 5,
-                title: "Robot Character",
-                category: "Character",
-                image: "http://static.photos/technology/640x360/105",
-                description: "Mechanical character with detailed moving parts and realistic materials."
-            }
-        ];
-
-        // Initialize carousel with smooth transitions
-        let currentIndex = 0;
-        let isAnimating = false;
-        const carousel = document.getElementById('carousel');
-        const animationDuration = 500;
-
-        // Preload all images
-        projects.forEach(project => {
-            const img = new Image();
-            img.src = project.image;
-        });
-        function calculateCardStyles(index, currentIndex, totalProjects) {
-            const position = (index - currentIndex + totalProjects) % totalProjects;
-            const centerOffset = position > totalProjects / 2 ? position - totalProjects : position;
-
-            let scale = 1 - Math.abs(centerOffset) * 0.15;
-            let opacity = 1 - Math.abs(centerOffset) * 0.3;
-            let translateX = `${centerOffset * 60}%`;
-            let zIndex = 10 - Math.abs(centerOffset) * 5;
-            let blur = Math.abs(centerOffset) * 0.5;
-
-            // Ensure values are within bounds
-            scale = Math.max(scale, 0.7);
-            opacity = Math.max(opacity, 0);
-            zIndex = Math.max(zIndex, 0);
-
-            // Responsive adjustments
-            if (window.innerWidth < 768) {
-                scale = 1 - Math.abs(centerOffset) * 0.1;
-                opacity = 1 - Math.abs(centerOffset) * 0.4;
-                translateX = `${centerOffset * 40}%`;
-            }
-
-            return {
-                transform: `translateX(${translateX}) scale(${scale})`,
-                opacity,
-                zIndex,
-                filter: `blur(${blur}px)`
-            };
-        }
-        function renderCarousel() {
-            // Render only once
-            carousel.innerHTML = '';
-
-            projects.forEach((project, index) => {
-                const projectCard = document.createElement('div');
-                projectCard.className = 'carousel-item absolute transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] will-change-transform hover:z-20 overflow-hidden rounded-xl';
-
-                projectCard.innerHTML = `
+            projectCard.innerHTML = `
                     <div class="project-card w-64 md:w-96 h-80 md:h-[28rem] rounded-xl overflow-hidden shadow-xl flex flex-col bg-gray-700">
                         <div class="overflow-hidden rounded-xl">
                             <img src="${project.image}" alt="${project.title}" class="w-full h-36 md:h-56 object-cover rounded-xl" />
@@ -913,137 +862,137 @@
                                 <h3 class="text-xl font-bold mb-2">${project.title}</h3>
                                 <p class="text-gray-300 text-sm">${project.description}</p>
                             </div>
-                            <a href="project.html?id=${project.id}" class="mt-4 inline-block text-indigo-400 hover:text-indigo-300 transition">View Project →</a>
+                            <a href="${project.link}" class="mt-4 inline-block text-indigo-400 hover:text-indigo-300 transition">View Project →</a>
                         </div>
                     </div>
                 `;
 
-                carousel.appendChild(projectCard);
-            });
+            carousel.appendChild(projectCard);
+        });
 
-            updateCarouselStyles(); // apply initial transforms
+        updateCarouselStyles(); // apply initial transforms
+    }
+
+    function updateCarouselStyles() {
+        const items = carousel.querySelectorAll('.carousel-item');
+
+        items.forEach((item, index) => {
+            const styles = calculateCardStyles(index, currentIndex, projects.length);
+            item.style.transform = styles.transform;
+            item.style.opacity = styles.opacity;
+            item.style.zIndex = styles.zIndex;
+            item.style.filter = styles.filter;
+        });
+    }
+
+    function navigateCarousel(direction) {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        currentIndex = (currentIndex + direction + projects.length) % projects.length;
+
+        updateCarouselStyles(); // smoothly transition between states
+
+        clearTimeout(window.carouselTimeout);
+        window.carouselTimeout = setTimeout(() => {
+            isAnimating = false;
+        }, animationDuration);
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => navigateCarousel(1));
+    document.getElementById('prevBtn').addEventListener('click', () => navigateCarousel(-1));
+
+    // Touch support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            navigateCarousel(-1);
         }
-
-        function updateCarouselStyles() {
-            const items = carousel.querySelectorAll('.carousel-item');
-
-            items.forEach((item, index) => {
-                const styles = calculateCardStyles(index, currentIndex, projects.length);
-                item.style.transform = styles.transform;
-                item.style.opacity = styles.opacity;
-                item.style.zIndex = styles.zIndex;
-                item.style.filter = styles.filter;
-            });
+        if (touchEndX > touchStartX + 50) {
+            navigateCarousel(1);
         }
-
-        function navigateCarousel(direction) {
-            if (isAnimating) return;
-            isAnimating = true;
-
-            currentIndex = (currentIndex + direction + projects.length) % projects.length;
-
-            updateCarouselStyles(); // smoothly transition between states
-
-            clearTimeout(window.carouselTimeout);
-            window.carouselTimeout = setTimeout(() => {
-                isAnimating = false;
-            }, animationDuration);
-        }
-
-        document.getElementById('nextBtn').addEventListener('click', () => navigateCarousel(1));
-        document.getElementById('prevBtn').addEventListener('click', () => navigateCarousel(-1));
-
-        // Touch support for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        carousel.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
-
-        carousel.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        }, { passive: true });
-
-        function handleSwipe() {
-            if (touchEndX < touchStartX - 50) {
-                navigateCarousel(-1);
-            }
-            if (touchEndX > touchStartX + 50) {
+    }
+    // Auto-rotate carousel with smoother transitions
+    let autoRotateInterval;
+    let rotationPaused = false;
+    function startAutoRotate() {
+        autoRotateInterval = setInterval(() => {
+            if (!isAnimating && !document.hidden && !rotationPaused) {
                 navigateCarousel(1);
             }
-        }
-        // Auto-rotate carousel with smoother transitions
-        let autoRotateInterval;
-        let rotationPaused = false;
-        function startAutoRotate() {
-            autoRotateInterval = setInterval(() => {
-                if (!isAnimating && !document.hidden && !rotationPaused) {
-                    navigateCarousel(1);
-                }
-            }, 5000);
-        }
-        carousel.addEventListener('mouseenter', () => {
-            rotationPaused = true;
-            clearInterval(autoRotateInterval);
-        });
+        }, 5000);
+    }
+    carousel.addEventListener('mouseenter', () => {
+        rotationPaused = true;
+        clearInterval(autoRotateInterval);
+    });
 
-        carousel.addEventListener('mouseleave', () => {
-            rotationPaused = false;
+    carousel.addEventListener('mouseleave', () => {
+        rotationPaused = false;
+        startAutoRotate();
+    });
+    // Handle visibility changes
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            clearInterval(autoRotateInterval);
+        } else {
             startAutoRotate();
-        });
-        // Handle visibility changes
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                clearInterval(autoRotateInterval);
-            } else {
-                startAutoRotate();
+        }
+    });
+
+    // Responsive adjustments
+    function handleResize() {
+        renderCarousel();
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // Initialize
+    renderCarousel();
+    startAutoRotate();
+
+    // Initialize feather icons
+    feather.replace();
+    // Initialize feather icons
+    feather.replace();
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
             }
         });
+    });
 
-        // Responsive adjustments
-        function handleResize() {
-            renderCarousel();
-        }
-
-        window.addEventListener('resize', handleResize);
-
-        // Initialize
-        renderCarousel();
-        startAutoRotate();
-
-        // Initialize feather icons
-        feather.replace();
-        // Initialize feather icons
-        feather.replace();
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-    </script>
-    <script>
-        const vflVideo = document.getElementById('vflTrailer');
-        vflVideo.addEventListener('loadedmetadata', () => {
-            vflVideo.currentTime = 30; // start at 5 seconds
-        });
-    </script>
-    <script>
-        const acientTidesVideo = document.getElementById('ancientTidesVideo');
-        acientTidesVideo.addEventListener('loadedmetadata', () => {
-            acientTidesVideo.currentTime = 30; // start at 5 seconds
-        });
-    </script>
+</script>
+<script>
+    const vflVideo = document.getElementById('vflTrailer');
+    vflVideo.addEventListener('loadedmetadata', () => {
+        vflVideo.currentTime = 30; // start at 5 seconds
+    });
+</script>
+<script>
+    const acientTidesVideo = document.getElementById('ancientTidesVideo');
+    acientTidesVideo.addEventListener('loadedmetadata', () => {
+        acientTidesVideo.currentTime = 30; // start at 5 seconds
+    });
+</script>
 </body>
 
 </html>
