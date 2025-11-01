@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizzy | BV Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .swiper-slide {
+            transition: all 0.5s ease;
+        }
+
+        .swiper-bundle {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.2);
+        }
+
+        .swiper-button {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+        }
+
+        .swiper:hover .swiper-button {
+            opacity: 1;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 60px;
+            /* button size */
+            height: 60px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style the arrow icon inside separately */
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 24px;
+            /* icon size */
+            color: #ffffff;
+            /* icon color */
+        }
+
+        :root {
+            --swiper-navigation-color: #ffffff;
+            /* Set your desired color */
+            --swiper-navigation-size: 32px;
+            /* Set your desired size */
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e1b4b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed;
+            border-radius: 4px;
+        }
+
+        .swiper-pagination-bullet {
+            background: #ffffff80;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #ff4f81;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">BV</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">← Home</a>
+
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Project Header -->
+    <section id="overview" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">CV</h1>
+
+            </div>
+            <div class="flex justify-center bg-gray-800 items-center min-h-screen">
+                <div class="flex justify-center bg-gray-800 items-center min-h-screen">
+                    <embed id="final-report" src="Pictures/CV/MyResume.pdf#zoom=244" width="1000" height="1400"
+                        type="application/pdf" class="block" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Project Navigation -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
+                    <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
+                    Back to Work
+                </a>
+                <a href="AncientTides.html" class="flex items-center group">
+                    Next Project: Ancient Tides
+                    <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold">BV</div>
+                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
