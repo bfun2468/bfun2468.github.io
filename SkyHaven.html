@@ -91,16 +91,17 @@
 </head>
 
 <body class="bg-gray-900 text-white">
+
     <!-- Navigation -->
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold">BV</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html#work" class="nav-link">Work</a>
-                    <a href="index.html#about" class="nav-link">About</a>
-                    <a href="index.html#skills" class="nav-link">Skills</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="index.html" class="nav-link">← Home</a>
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#details" class="nav-link">Details</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
                     <i data-feather="menu"></i>
@@ -109,8 +110,9 @@
         </div>
     </nav>
 
+
     <!-- Project Header -->
-    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <section id="overview" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="inline-block px-4 py-1 bg-indigo-600 rounded-full text-sm mb-4">Internship/Freelance</span>
@@ -200,224 +202,270 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Project Details -->
-    <section class="py-12 bg-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-">About SkyHaven</h2>
-
-                    <p class="text-gray-300 mb-6">
+    <section id="details" <!-- Project Details -->
+        <section class="py-12 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div>
-                        <p class="text-gray-300 mb-2">
-                            <span class="font-bold">SkyHaven Studios</span> is a <span class="font-bold">small
-                                independent game development
-                                studio</span>
-                            composed of passionate
-                            programmers, artists, freelancers, volunteers, interns, and a few permanent employees. The
-                            studio’s goal is to create fun and engaging games with a distinct stylized visual identity.
+                        <h2 class="text-3xl font-bold mb-">About SkyHaven</h2>
 
-                        </p>
-                    </div>
-                    <div>
-                        <p class="text-gray-300 mb-2">
-                            The company originally began as a <span class="font-bold">community gaming server</span>,
-                            hosting various games for friends
-                            and family. Over time, this evolved into a full-fledged game development team with the
-                            mission to bring that same sense of joy and connection to a wider audience.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="text-gray-300 mb-2">
-                            SkyHaven’s current main project is <span class="font-bold">Cosmos, a voxel-themed adventure
-                                game</span> developed in the
-                            Godot engine. The game emphasizes creativity, exploration, and a unique artistic direction
-                            that sets it apart within the indie game space.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="text-gray-300 mb-8">
-                            The studio values span <span class="font-bold">self-driven, proactive team members</span>
-                            who can
-                            take initiative and manage
-                            their tasks independently, especially given its <span class="font-bold">remote and
-                                flexible</span> work structure. Despite
-                            its small size, SkyHaven maintains an ambitious roadmap and a strong collaborative spirit
-                            among its members.
-                        </p>
-                    </div>
+                        <p class="text-gray-300 mb-6">
+                        <div>
+                            <p class="text-gray-300 mb-2">
+                                <span class="font-bold">SkyHaven Studios</span> is a <span class="font-bold">small
+                                    independent game development
+                                    studio</span>
+                                composed of passionate
+                                programmers, artists, freelancers, volunteers, interns, and a few permanent employees.
+                                The
+                                studio’s goal is to create fun and engaging games with a distinct stylized visual
+                                identity.
 
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="compass" class="w-5 h-5 text-indigo-400"></i>
-                            </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Location:</span> Remote from Belgium
                             </p>
                         </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="globe" class="w-5 h-5 text-indigo-400"></i>
-                            </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Language:</span> English
+                        <div>
+                            <p class="text-gray-300 mb-2">
+                                The company originally began as a <span class="font-bold">community gaming
+                                    server</span>,
+                                hosting various games for friends
+                                and family. Over time, this evolved into a full-fledged game development team with the
+                                mission to bring that same sense of joy and connection to a wider audience.
                             </p>
                         </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="user" class="w-5 h-5 text-indigo-400"></i>
-                            </div>
-                            <p class="ml-3 text-gray-300 mb-8">
-                                <span class="font-semibold">Size Company:</span> 3-10 Employees/Volunteers/Freelancers
+                        <div>
+                            <p class="text-gray-300 mb-2">
+                                SkyHaven’s current main project is <span class="font-bold">Cosmos, a voxel-themed
+                                    adventure
+                                    game</span> developed in the
+                                Godot engine. The game emphasizes creativity, exploration, and a unique artistic
+                                direction
+                                that sets it apart within the indie game space.
                             </p>
                         </div>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Extra Files</h2>
-                    <p class="text-gray-300 mb-6">
-                    <div>
-
-                        <p class="text-gray-300 mb-4">
-                            Since there are too many gifs, pictures and explanation needed to fully talk about my
-                            internship I include here the extra files and documentation I made during my internship.
+                        <div>
+                            <p class="text-gray-300 mb-8">
+                                The studio values span <span class="font-bold">self-driven, proactive team
+                                    members</span>
+                                who can
+                                take initiative and manage
+                                their tasks independently, especially given its <span class="font-bold">remote and
+                                    flexible</span> work structure. Despite
+                                its small size, SkyHaven maintains an ambitious roadmap and a strong collaborative
+                                spirit
+                                among its members.
+                            </p>
+                        </div>
 
                         </p>
-                    </div>
-
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="file" class="w-5 h-5 text-indigo-400"></i>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="compass" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Location:</span> Remote from Belgium
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Internship Final Report:</span>
-                                <a href="#final-report"
-                                    class="text-indigo-400  transition-colors duration-200 bg-gray-900 bg-opacity-70 rounded-full absolute px-3 py-1 hover:bg-indigo-600 ml-2">
-                                    Final_Report
-                                </a>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="globe" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Language:</span> English
+                                </p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="user" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300 mb-8">
+                                    <span class="font-semibold">Size Company:</span> 3-10
+                                    Employees/Volunteers/Freelancers
+                                </p>
+                            </div>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-6">Extra Files</h2>
+                        <p class="text-gray-300 mb-6">
+                        <div>
+
+                            <p class="text-gray-300 mb-4">
+                                Since there are too many gifs, pictures and explanation needed to fully talk about my
+                                internship I include here the extra files and documentation I made during my internship.
+
                             </p>
                         </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="file" class="w-5 h-5 text-indigo-400"></i>
+
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="file" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Internship Final Report:</span>
+                                    <a href="#final-report"
+                                        class="text-indigo-400  transition-colors duration-200 bg-gray-900 bg-opacity-70 rounded-full absolute px-3 py-1 hover:bg-indigo-600 ml-2">
+                                        Final_Report
+                                    </a>
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Internship Final Presentation:</span>
-                                <a href="#final-presentation"
-                                    class="text-indigo-400  transition-colors duration-200 bg-gray-900 bg-opacity-70 rounded-full absolute px-3 py-1 hover:bg-indigo-600 ml-2">
-                                    Final_Presentation
-                                </a>
-                            </p>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="file" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Internship Final Presentation:</span>
+                                    <a href="#final-presentation"
+                                        class="text-indigo-400  transition-colors duration-200 bg-gray-900 bg-opacity-70 rounded-full absolute px-3 py-1 hover:bg-indigo-600 ml-2">
+                                        Final_Presentation
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">My Responsibilities</h2>
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">3D Animation</h3>
-                            <ul class="list-disc list-outside pl-6 text-gray-300">
-                                <li>Created animations for the main character and in-game creatures, including actions
-                                    like <span class="font-bold">crafting, carrying, mining, chopping, climbing, and
-                                        rope movement</span> .</li>
-                                <li>Developed both Mixamo-based and fully custom animations, gradually transitioning to
-                                    animating from scratch.</li>
-                                <li>Worked on animation blending and transitions for fluid gameplay motion.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Rigging</h3>
-                            <ul class="list-disc list-outside pl-6 text-gray-300">
-                                <li>Reworked the main character rig for better usability and efficiency.</li>
-                                <li>Designed and rigged a full skeleton for a new in-game creature (the Jackalope).</li>
-                                <li>Implemented IK/FK switching systems for smoother animation control.</li>
-                                <li>Rigged 30+ hairstyles and weight painted them to look natural with the animations.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Technical Art</h3>
-                            <ul class="list-disc list-outside pl-6 text-gray-300">
-                                <li>Researched cloth simulation techniques in Godot and Blender to improve the realism
-                                    of ponchos and cloaks.</li>
-                                <li>Experimented with <span class="font-bold">soft body physics</span>, jiggle bones,
-                                    and wind-based motion to enhance
-                                    character realism.</li>
-                                <li>Used the same <span class="font-bold">jiggle bones</span> on the hairs to make them
-                                    flow with the animations and
-                                    movement in the engine.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">3D Asset Creation</h3>
-                            <ul class="list-disc list-outside pl-6 text-gray-300">
-                                <li>Modeled and textured <span class="font-bold">stylized, low-poly</span> assets such
-                                    as clothing (poncho, cloak,
-                                    boots), a straw hat, rope, compass, and other in-game items.</li>
-                                <li>Modeling 30+ hairstyles from 2D designs and giving them shapekeys to make them fit
-                                    the forehead and head for character creation.</li>
-                                <li>Optimized high-poly models, baked textures, and ensured visual consistency within
-                                    the stylized art direction.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Documentation & Workflow Support</h3>
-                            <ul class="list-disc list-outside pl-6 text-gray-300">
-                                <li>Created guides and documentation for animation setup, file export, and rigging
-                                    systems.</li>
-                                <li>Cleaned up and reorganized project files for better workflow consistency.</li>
-                                <li>Used <span class="font-bold">Clockify</span> for time tracking and Huly for task
-                                    management.</li>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">My Responsibilities</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">3D Animation</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-300">
+                                    <li>Created animations for the main character and in-game creatures, including
+                                        actions
+                                        like <span class="font-bold">crafting, carrying, mining, chopping, climbing, and
+                                            rope movement</span> .</li>
+                                    <li>Developed both Mixamo-based and fully custom animations, gradually transitioning
+                                        to
+                                        animating from scratch.</li>
+                                    <li>Worked on animation blending and transitions for fluid gameplay motion.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Rigging</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-300">
+                                    <li>Reworked the main character rig for better usability and efficiency.</li>
+                                    <li>Designed and rigged a full skeleton for a new in-game creature (the Jackalope).
+                                    </li>
+                                    <li>Implemented IK/FK switching systems for smoother animation control.</li>
+                                    <li>Rigged 30+ hairstyles and weight painted them to look natural with the
+                                        animations.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Technical Art</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-300">
+                                    <li>Researched cloth simulation techniques in Godot and Blender to improve the
+                                        realism
+                                        of ponchos and cloaks.</li>
+                                    <li>Experimented with <span class="font-bold">soft body physics</span>, jiggle
+                                        bones,
+                                        and wind-based motion to enhance
+                                        character realism.</li>
+                                    <li>Used the same <span class="font-bold">jiggle bones</span> on the hairs to make
+                                        them
+                                        flow with the animations and
+                                        movement in the engine.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">3D Asset Creation</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-300">
+                                    <li>Modeled and textured <span class="font-bold">stylized, low-poly</span> assets
+                                        such
+                                        as clothing (poncho, cloak,
+                                        boots), a straw hat, rope, compass, and other in-game items.</li>
+                                    <li>Modeling 30+ hairstyles from 2D designs and giving them shapekeys to make them
+                                        fit
+                                        the forehead and head for character creation.</li>
+                                    <li>Optimized high-poly models, baked textures, and ensured visual consistency
+                                        within
+                                        the stylized art direction.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Documentation & Workflow Support</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-300">
+                                    <li>Created guides and documentation for animation setup, file export, and rigging
+                                        systems.</li>
+                                    <li>Cleaned up and reorganized project files for better workflow consistency.</li>
+                                    <li>Used <span class="font-bold">Clockify</span> for time tracking and Huly for task
+                                        management.</li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Main Content -->
+        </section>
+        <!-- Main Content -->
 
 
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">3D Gallery</h2>
+        <section class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">3D Gallery</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group " data-aos="fade-up">
-                    <main>
-                        <!-- Swiper Gallery -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group " data-aos="fade-up">
+                        <main>
+                            <!-- Swiper Gallery -->
+                            <div class="relative group">
+                                <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/3D/Clothes.png" alt="Tech Project"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div
+                                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                            Models</div>
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/3D/Basket.png" alt="Abstract Art"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/3D/Compass.png" alt="Minimal Design"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/3D/Cloack.png" alt="Minimal Design"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-pagination "></div>
+                                    <div
+                                        class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                    </div>
+                                    <div
+                                        class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative group">
                             <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
                                 <div class="swiper-wrapper">
-
                                     <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/3D/Clothes.png" alt="Tech Project"
+                                        <img src="Pictures/SkyHaven/3D/FoxHen.png" alt="Tech Project"
                                             class="w-full h-full object-cover">
                                     </div>
                                     <div
                                         class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                        Models</div>
+                                        FoxHen</div>
                                     <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/3D/Basket.png" alt="Abstract Art"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/3D/Compass.png" alt="Minimal Design"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/3D/Cloack.png" alt="Minimal Design"
+                                        <img src="Pictures/SkyHaven/3D/FoxHenBack.png" alt="Abstract Art"
                                             class="w-full h-full object-cover">
                                     </div>
                                 </div>
-
                                 <div class="swiper-pagination "></div>
+
                                 <div
                                     class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
@@ -426,209 +474,277 @@
                                 </div>
                             </div>
                         </div>
-
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/FoxHen.png" alt="Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    FoxHen</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/FoxHenBack.png" alt="Abstract Art"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                        </div>
                     </div>
-                </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/Hair2.png" alt="Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    FoxHen</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/Hair1.png" alt="Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    FoxHen</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/Hair3.png" alt="Abstract Art"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Hairs</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/3D/Hair.png" alt="Abstract Art"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-    </section>
-    <!-- Animation Gallery Section -->
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Animation Gallery</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group " data-aos="fade-up">
-                    <main>
-                        <!-- Swiper Gallery -->
-                        <div class="relative group">
-                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/Animation/Jackalope Run.gif" alt="Tech Project"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                    <div
-                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                        Jackalope</div>
-                                    <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/Animation/JackalopeWalk.gif" alt="Abstract Art"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="Pictures/SkyHaven/Animation/Jackalope Eat.gif" alt="Minimal Design"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination "></div>
-                                <div
-                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                                </div>
-                                <div
-                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
-                    <!-- Swiper Gallery -->
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/Fall.gif" alt="Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Fall
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/FallHang.gif"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/JumpFall.gif"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/Far Jump.gif"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Gallery Item 3 -->
                     <div class="relative group" data-aos="fade-up" data-aos-delay="200">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/ForwardClimb.gif" alt="Tech Project"
-                                        class="w-full h-full object-cover">
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/3D/Hair2.png" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        FoxHen</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/3D/Hair1.png" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        FoxHen</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/3D/Hair3.png" alt="Abstract Art"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Hairs</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/3D/Hair.png" alt="Abstract Art"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
                                 <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Rope</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/RopeJump.gif"
-                                        class="w-full h-full object-cover">
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
                             </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                        </div>
+                    </div>
+
+        </section>
+        <!-- Animation Gallery Section -->
+        <section id="gallery" class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Animation Gallery</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group " data-aos="fade-up">
+                        <main>
+                            <!-- Swiper Gallery -->
+                            <div class="relative group">
+                                <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/Animation/Jackalope Run.gif" alt="Tech Project"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div
+                                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                            Jackalope</div>
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/Animation/JackalopeWalk.gif" alt="Abstract Art"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="Pictures/SkyHaven/Animation/Jackalope Eat.gif"
+                                                alt="Minimal Design" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination "></div>
+                                    <div
+                                        class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                    </div>
+                                    <div
+                                        class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                    </div>
+                                </div>
                             </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                    </div>
+
+
+
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Swiper Gallery -->
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/Fall.gif" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Fall
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/FallHang.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/JumpFall.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/Far Jump.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/ForwardClimb.gif" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Rope</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/RopeJump.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="relative group" data-aos="fade-up">
+                        <!-- Swiper Gallery -->
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/SpearIdle.gif" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Spear</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/SpearStab.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/SpearThrow.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Swiper Gallery -->
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/Run180.gif" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        RunTurn</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/RunRoll180.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden rounded-xl aspect-square">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/Mining.gif" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Mine/Stairs</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Animation/StairClimb.gif"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+        </section>
 
-                <!-- Gallery Item 4 -->
-                <div class="relative group" data-aos="fade-up">
+        <!-- TechArt Gallery Section -->
+
+        <section class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">TechArt Gallery</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Swiper Gallery -->
-                    <div class="relative group">
+                    <div class="relative group" data-aos="fade-up">
                         <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/SpearIdle.gif" alt="Tech Project"
+                                    <img src="Pictures/SkyHaven/TechArt/ClothPhysV3.gif" alt=" Tech Project"
                                         class="w-full h-full object-cover">
-                                </div>
-                                <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Spear</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/SpearStab.gif"
-                                        class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Failed Cloth Simulation</div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/SpearThrow.gif"
+                                    <img src="Pictures/SkyHaven/TechArt/ClothPhysV2.gif" alt=" Tech Project"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Pictures/SkyHaven/TechArt/ClothPhysV1.gif" alt=" Tech Project"
                                         class="w-full h-full object-cover">
                                 </div>
                             </div>
@@ -641,472 +757,376 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Gallery Item 5 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
-                    <!-- Swiper Gallery -->
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/Run180.gif" alt="Tech Project"
-                                        class="w-full h-full object-cover">
+
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/TechArt/JiggleBones2.gif" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                        <div
+                                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                            JiggleBones</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/TechArt/JiggleBones1.gif" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
                                 <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    RunTurn</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/RunRoll180.gif"
-                                        class="w-full h-full object-cover">
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Gallery Item 6 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="overflow-hidden rounded-xl aspect-square">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/Mining.gif" alt="Tech Project"
-                                        class="w-full h-full object-cover">
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/TechArt/HairShow.gif" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                        <div
+                                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                            Hair</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/TechArt/HairShow2.gif" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/TechArt/Hairshowback.gif" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
                                 <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Mine/Stairs</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Animation/StairClimb.gif"
-                                        class="w-full h-full object-cover">
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- TechArt Gallery Section -->
+        <section class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Rigging Gallery</h2>
 
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">TechArt Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group" data-aos="fade-up">
+                        <div class="overflow-hidden rounded-xl aspect-square">
+                            <div
+                                class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                Main Character</div>
+                            <img src="Pictures/SkyHaven/Rigging/MCRig.png" alt="Pastel Titan Wireframe"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Swiper Gallery -->
-                <div class="relative group" data-aos="fade-up">
-                    <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                    </div>
 
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="Pictures/SkyHaven/TechArt/ClothPhysV3.gif" alt=" Tech Project"
-                                    class="w-full h-full object-cover">
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden rounded-xl aspect-square">
+                            <div
+                                class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                Jackalope Rig</div>
+                            <img src="Pictures/SkyHaven/Rigging/JackalopeRig.png"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative group">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Rigging/HairRig.png" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                        <div
+                                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                            JiggleBones</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/SkyHaven/Rigging/PochoRig.png" alt=" Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
                                 <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Failed Cloth Simulation</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="Pictures/SkyHaven/TechArt/ClothPhysV2.gif" alt=" Tech Project"
-                                    class="w-full h-full object-cover">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="Pictures/SkyHaven/TechArt/ClothPhysV1.gif" alt=" Tech Project"
-                                    class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination "></div>
-                        <div
-                            class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                        </div>
-                        <div
-                            class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/TechArt/JiggleBones2.gif" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                        JiggleBones</div>
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/TechArt/JiggleBones1.gif" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
+                                <div
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/TechArt/HairShow.gif" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                        Hair</div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/TechArt/HairShow2.gif" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/TechArt/Hairshowback.gif" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Rigging Gallery</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group" data-aos="fade-up">
-                    <div class="overflow-hidden rounded-xl aspect-square">
-                        <div
-                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                            Main Character</div>
-                        <img src="Pictures/SkyHaven/Rigging/MCRig.png" alt="Pastel Titan Wireframe"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="overflow-hidden rounded-xl aspect-square">
-                        <div
-                            class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                            Jackalope Rig</div>
-                        <img src="Pictures/SkyHaven/Rigging/JackalopeRig.png"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative group">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Rigging/HairRig.png" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                        JiggleBones</div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/SkyHaven/Rigging/PochoRig.png" alt=" Tech Project"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Details -->
-    <section class="py-12 bg-gray-800/75">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div>
-                <h2 class="text-3xl font-bold mb-6 text-center">Self Reflection</h2>
-                <div class="space-y-6">
-                    <p class="text-gray-300 mb-2 text-center">
-                        My internship at <span class="font-bold">SkyHaven Studios</span> was a valuable learning
-                        experience that helped me grow
-                        both technically and professionally. I improved significantly in <span
-                            class="font-bold">animation, rigging, and 3D</span>
-                        modeling, gaining confidence in Blender and learning how to adapt my work to a professional
-                        game pipeline. I also developed <span class="font-bold">stronger communication and time
-                            management</span> skills while
-                        working remotely.
-
-                    </p>
-                    <div>
+        <!-- Project Details -->
+        <section class="py-12 bg-gray-800/75">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-center">Self Reflection</h2>
+                    <div class="space-y-6">
                         <p class="text-gray-300 mb-2 text-center">
-                            Not everything went smoothly — delayed feedback, engine crashes, and the occasional
-                            struggle
-                            to balance quality with efficiency were challenges I had to overcome. However, these
-                            experiences taught me the importance of <span class="font-bold">problem-solving, clear
-                                documentation, and adaptability</span> in a production environment.
+                            My internship at <span class="font-bold">SkyHaven Studios</span> was a valuable learning
+                            experience that helped me grow
+                            both technically and professionally. I improved significantly in <span
+                                class="font-bold">animation, rigging, and 3D</span>
+                            modeling, gaining confidence in Blender and learning how to adapt my work to a professional
+                            game pipeline. I also developed <span class="font-bold">stronger communication and time
+                                management</span> skills while
+                            working remotely.
+
                         </p>
+                        <div>
+                            <p class="text-gray-300 mb-2 text-center">
+                                Not everything went smoothly — delayed feedback, engine crashes, and the occasional
+                                struggle
+                                to balance quality with efficiency were challenges I had to overcome. However, these
+                                experiences taught me the importance of <span class="font-bold">problem-solving, clear
+                                    documentation, and adaptability</span> in a production environment.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-gray-300 mb-20 text-center">
+                                Most importantly, I discovered my <span class="font-bold">passion for creature animation
+                                    and
+                                    stylized art</span>,
+                                realizing
+                                that variety and creativity keep me motivated. This internship gave me a clear sense of
+                                direction for my future as a <span class="font-bold">3D generalist</span> and confirmed
+                                my
+                                desire to continue working
+                                in
+                                game development.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-gray-300 mb-20 text-center">
-                            Most importantly, I discovered my <span class="font-bold">passion for creature animation and
-                                stylized art</span>,
-                            realizing
-                            that variety and creativity keep me motivated. This internship gave me a clear sense of
-                            direction for my future as a <span class="font-bold">3D generalist</span> and confirmed my
-                            desire to continue working
-                            in
-                            game development.
-                        </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <embed id="final-report" src="Pictures/SkyHaven/Bram_Verschaeve_FinalReport.pdf" width="700"
+                        height="800" type="application/pdf">
+                    <embed id="final-presentation" src="Pictures/SkyHaven/Skyhaven Internship Presentation.pdf"
+                        width="700" height="800" type="application/pdf">
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Project Navigation -->
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
+                        <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
+                        Back to Work
+                    </a>
+                    <a href="fluffynature.html" class="flex items-center group">
+                        Next Project: Fluffy Nature
+                        <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="py-12 bg-gray-950">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <div class="text-2xl font-bold">BV</div>
+                        <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
+                        <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                        <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <embed id="final-report" src="Pictures/SkyHaven/Bram_Verschaeve_FinalReport.pdf" width="700"
-                    height="800" type="application/pdf">
-                <embed id="final-presentation" src="Pictures/SkyHaven/Skyhaven Internship Presentation.pdf" width="700"
-                    height="800" type="application/pdf">
+        </footer>
+
+        <!-- Image Zoom Modal -->
+        <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
+            <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
+                <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+                <button onclick="downloadImage()"
+                    class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="download" class="w-6 h-6"></i>
+                </button>
             </div>
         </div>
-        </div>
-    </section>
-    <!-- Project Navigation -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between">
-                <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
-                    <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
-                    Back to Work
-                </a>
-                <a href="fluffynature.html" class="flex items-center group">
-                    Next Project: Fluffy Nature
-                    <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                once: true
+            });
 
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+            // Initialize feather icons
+            feather.replace();
 
-    <!-- Image Zoom Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
-        <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
-            <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
-            <button onclick="closeModal()"
-                class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="x" class="w-6 h-6"></i>
-            </button>
-            <button onclick="downloadImage()"
-                class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="download" class="w-6 h-6"></i>
-            </button>
-        </div>
-    </div>
+            // Image zoom functionality
+            function zoomImage(imgElement) {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImage');
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-
-        // Initialize feather icons
-        feather.replace();
-
-        // Image zoom functionality
-        function zoomImage(imgElement) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-
-            modalImg.src = imgElement.src;
-            modalImg.alt = imgElement.alt;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-
-        function downloadImage() {
-            const imgSrc = document.getElementById('modalImage').src;
-            const link = document.createElement('a');
-            link.href = imgSrc;
-            link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
-        // Close modal when clicking outside image
-        document.getElementById('imageModal').addEventListener('click', function (e) {
-            if (e.target === this) {
-                closeModal();
+                modalImg.src = imgElement.src;
+                modalImg.alt = imgElement.alt;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             }
-        });
 
-        // Close modal with ESC key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
-                closeModal();
+            function closeModal() {
+                document.getElementById('imageModal').classList.add('hidden');
+                document.body.style.overflow = '';
             }
-        });
-    </script>
-    <!-- Fullscreen Zoom Overlay -->
-    <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
-        <img id="zoomedImage" src="" alt="Zoomed view"
-            class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-700 scale-95 opacity-0" />
-    </div>
 
-    <script>
-        function zoomImage(imgElement) {
-            const overlay = document.getElementById('zoomOverlay');
-            const zoomed = document.getElementById('zoomedImage');
-            zoomed.src = imgElement.src;
+            function downloadImage() {
+                const imgSrc = document.getElementById('modalImage').src;
+                const link = document.createElement('a');
+                link.href = imgSrc;
+                link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
 
-            // show overlay
-            overlay.classList.remove('hidden');
-            setTimeout(() => {
-                zoomed.classList.remove('scale-95', 'opacity-0');
-                zoomed.classList.add('scale-100', 'opacity-100');
-            }, 10);
-        }
+            // Close modal when clicking outside image
+            document.getElementById('imageModal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
 
-        // close overlay when clicking outside the image
-        document.getElementById('zoomOverlay').addEventListener('click', (e) => {
-            if (e.target.id === 'zoomOverlay') {
+            // Close modal with ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        </script>
+        <!-- Fullscreen Zoom Overlay -->
+        <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+            <img id="zoomedImage" src="" alt="Zoomed view"
+                class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-700 scale-95 opacity-0" />
+        </div>
+
+        <script>
+            function zoomImage(imgElement) {
+                const overlay = document.getElementById('zoomOverlay');
                 const zoomed = document.getElementById('zoomedImage');
-                zoomed.classList.add('scale-95', 'opacity-0');
+                zoomed.src = imgElement.src;
+
+                // show overlay
+                overlay.classList.remove('hidden');
                 setTimeout(() => {
-                    document.getElementById('zoomOverlay').classList.add('hidden');
-                }, 200);
+                    zoomed.classList.remove('scale-95', 'opacity-0');
+                    zoomed.classList.add('scale-100', 'opacity-100');
+                }, 10);
             }
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Loop through all Swipers on the page
-            document.querySelectorAll(".swiper").forEach((swiperEl, index) => {
-                // Make unique classes for each Swiper
-                const next = swiperEl.querySelector(".swiper-button-next");
-                const prev = swiperEl.querySelector(".swiper-button-prev");
-                const pagination = swiperEl.querySelector(".swiper-pagination");
 
-                // Give them unique class names
-                next.classList.add(`swiper-next-${index}`);
-                prev.classList.add(`swiper-prev-${index}`);
-                pagination.classList.add(`swiper-pagination-${index}`);
+            // close overlay when clicking outside the image
+            document.getElementById('zoomOverlay').addEventListener('click', (e) => {
+                if (e.target.id === 'zoomOverlay') {
+                    const zoomed = document.getElementById('zoomedImage');
+                    zoomed.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        document.getElementById('zoomOverlay').classList.add('hidden');
+                    }, 200);
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Loop through all Swipers on the page
+                document.querySelectorAll(".swiper").forEach((swiperEl, index) => {
+                    // Make unique classes for each Swiper
+                    const next = swiperEl.querySelector(".swiper-button-next");
+                    const prev = swiperEl.querySelector(".swiper-button-prev");
+                    const pagination = swiperEl.querySelector(".swiper-pagination");
 
-                // Initialize Swiper
-                new Swiper(swiperEl, {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    // autoplay: {
-                    //     delay: 3000,
-                    //     disableOnInteraction: true,
-                    // },
-                    navigation: {
-                        nextEl: `.swiper-next-${index}`,
-                        prevEl: `.swiper-prev-${index}`,
-                    },
-                    pagination: {
-                        el: `.swiper-pagination-${index}`,
-                        clickable: true,
-                        dynamicBullets: true,
-                    },
+                    // Give them unique class names
+                    next.classList.add(`swiper-next-${index}`);
+                    prev.classList.add(`swiper-prev-${index}`);
+                    pagination.classList.add(`swiper-pagination-${index}`);
+
+                    // Initialize Swiper
+                    new Swiper(swiperEl, {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        // autoplay: {
+                        //     delay: 3000,
+                        //     disableOnInteraction: true,
+                        // },
+                        navigation: {
+                            nextEl: `.swiper-next-${index}`,
+                            prevEl: `.swiper-prev-${index}`,
+                        },
+                        pagination: {
+                            el: `.swiper-pagination-${index}`,
+                            clickable: true,
+                            dynamicBullets: true,
+                        },
+                    });
                 });
             });
-        });
 
-        // Initialize Feather Icons
-        feather.replace();
-    </script>
+            // Initialize Feather Icons
+            feather.replace();
+        </script>
 </body>
 
 </html>

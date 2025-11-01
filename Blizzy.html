@@ -91,16 +91,17 @@
 </head>
 
 <body class="bg-gray-900 text-white">
+
     <!-- Navigation -->
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold">BV</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html#work" class="nav-link">Work</a>
-                    <a href="index.html#about" class="nav-link">About</a>
-                    <a href="index.html#skills" class="nav-link">Skills</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="index.html" class="nav-link">← Home</a>
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#details" class="nav-link">Details</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
                     <i data-feather="menu"></i>
@@ -109,8 +110,9 @@
         </div>
     </nav>
 
+
     <!-- Project Header -->
-    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <section id="overview" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="inline-block px-4 py-1 bg-indigo-600 rounded-full text-sm mb-4">Robuddy</span>
@@ -179,473 +181,459 @@
             </div>
         </div>
     </section>
+    <section id="details" <!-- Project Details -->
+        <section class="py-12 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-300 mb-6">
+                            <span class="text-sky-400 font-semibold">Blizzy</span> was the first <span
+                                class="text-sky-400 font-semibold">PBR</span> model I ever created —
+                            a milestone project
+                            that introduced me to the fundamentals of physically based rendering.
+                            Through this project, I learned how roughness, normal, and metallic maps interact to define
+                            realistic
+                            materials and surfaces. Experimenting with different values helped me understand how
+                            <span class="text-sky-400 font-semibold">light behaves</span> across various materials,
+                            shaping
+                            the overall look and feel of the model.
+                        </p>
+
+                        <p class="text-gray-300 mb-6">
+                            Beyond materials, Blizzy was also designed with animation in mind — marking my first steps
+                            into
+                            the world of rigging and movement.
+                            I explored key animation principles and built a
+                            <span class="text-sky-400 font-semibold">functioning rig from scratch</span>,
+                            learning about inverse kinematics, bone hierarchies, and weight painting.
+                            This hands-on experience gave me a deeper appreciation for how
+                            <span class="text-sky-400 font-semibold">technical and artistic elements</span> come
+                            together
+                            to bring a 3D character to life.
+                        </p>
+                    </div>
+                    <div class="lg:grid-cols-2 gap-12">
+                        <h2 class="text-3xl font-bold mb-6">My Takeaways</h2>
+                        <p class="text-gray-300 mb-6">
+                            Overall, this project became a cornerstone in my learning journey.
+                            It pushed me to move beyond static modeling and dive into the full 3D pipeline —
+                            from modeling and texturing to rigging and animation.
+                            <span class="text-sky-400 font-semibold">Blizzy</span> not only strengthened my
+                            technical foundation but also inspired my passion for creating
+                            <span class="text-sky-400 font-semibold">characters with both personality and
+                                purpose.</span>
+                        </p>
 
 
-    <!-- Project Details -->
-    <section class="py-12 bg-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                    <p class="text-gray-300 mb-6">
-                        <span class="text-sky-400 font-semibold">Blizzy</span> was the first <span
-                            class="text-sky-400 font-semibold">PBR model</span> I ever created — a milestone project
-                        that introduced me to the fundamentals of <span class="text-sky-400 font-semibold">physically
-                            based rendering.</span> Through this project, I learned how <span
-                            class="text-sky-400 font-semibold">roughness</span>, <span
-                            class="text-sky-400 font-semibold">normal</span>, and <span
-                            class="text-sky-400 font-semibold">metallic maps</span> interact to define realistic
-                        materials and surfaces. Experimenting with different values helped me understand how <span
-                            class="text-sky-400 font-semibold">light</span> behaves across various materials, shaping
-                        the overall look and feel of the model.
-                    </p>
+                        <h1 class="text-2xl font-bold mb-6">Project Details</h1>
 
-                    <p class="text-gray-300 mb-6">
-                        Beyond materials, <span class="text-sky-400 font-semibold">Blizzy</span> was also designed with
-                        <span class="text-sky-400 font-semibold">animation</span> in mind — marking my first steps into
-                        the world of <span class="text-sky-400 font-semibold">rigging</span> and <span
-                            class="text-sky-400 font-semibold">movement.</span> I explored key <span
-                            class="text-sky-400 font-semibold">animation principles</span> and built a <span
-                            class="text-sky-400 font-semibold">functioning rig from scratch</span>, learning about <span
-                            class="text-sky-400 font-semibold">inverse kinematics</span>, <span
-                            class="text-sky-400 font-semibold">forward kinematics</span>, <span
-                            class="text-sky-400 font-semibold">bone hierarchies</span>, and <span
-                            class="text-sky-400 font-semibold">weight painting.</span> This hands-on experience gave me
-                        a deeper appreciation for how <span class="text-sky-400 font-semibold">technical</span> and
-                        <span class="text-sky-400 font-semibold">artistic elements</span> come together to bring a 3D
-                        character to life.
-                    </p>
-                </div>
-                <div class="lg:grid-cols-2 gap-12">
-                    <h2 class="text-3xl font-bold mb-6">My Takeaways</h2>
-                    <p class="text-gray-300 mb-6">
-                        Overall, this project became a <span class="text-sky-400 font-semibold">cornerstone</span> in my
-                        learning journey. It pushed me to move beyond <span class="text-sky-400 font-semibold">static
-                            modeling</span> and dive into the full <span class="text-sky-400 font-semibold">3D
-                            pipeline</span> — from <span class="text-sky-400 font-semibold">modeling</span> and <span
-                            class="text-sky-400 font-semibold">texturing</span> to <span
-                            class="text-sky-400 font-semibold">rigging</span> and <span
-                            class="text-sky-400 font-semibold">animation.</span> <span
-                            class="text-sky-400 font-semibold">Blizzy</span> not only strengthened my <span
-                            class="text-sky-400 font-semibold">technical foundation</span> but also inspired my passion
-                        for creating <span class="text-sky-400 font-semibold">characters with both personality and
-                            purpose.</span>
-                    </p>
-
-                    <h1 class="text-2xl font-bold mb-6">Project Details</h1>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Polycount:</span> ~10K thousand triangles optimized and
+                                    game
+                                    ready
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Polycount:</span> ~10K thousand triangles optimized and game
-                                ready
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Textures:</span> 2K PBR materials with Substance Painter
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Textures:</span> 2K PBR materials with Substance Painter
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Rendered:</span> In Blender, Unity and Sketchfab
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Rendered:</span> In Blender, Unity and Sketchfab
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-20 bg-gray-800/50">
-        <div class="container mx-auto px-6 ">
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6 text-white">Blockout and Designing</h2>
+        <section id="gallery" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6 ">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Blockout and Designing</h2>
 
-                    <p class="text-gray-300 mb-6">
-                        <span class="text-sky-400 font-semibold">Blizzy</span> went through a lot of
-                        <span class="text-sky-400 font-semibold">iteration</span> before reaching his final design.
-                        At first, I had no clear vision of what he should become — I was simply
-                        <span class="text-sky-400 font-semibold">experimenting</span>, testing ideas, and seeing what
-                        worked.
-                        It was very much a “let’s try this and see if it looks good” kind of project.
-                        Over time, I created several versions that now feel like his earlier
-                        <span class="text-sky-400 font-semibold">evolutionary stages.</span>
-                        There was even a prototype named
-                        <span class="text-sky-400 font-semibold">Greg</span> — a round, fingered robot —
-                        but let’s just say... <span class="text-sky-400 font-semibold">we don’t talk about Greg.</span>
-                    </p>
+                        <p class="text-gray-300 mb-6">
+                            <span class="text-sky-400 font-semibold">Blizzy</span> went through a lot of iteration
+                            before
+                            reaching his final design.
+                            At first, I had no clear vision of what he should become — I was simply experimenting,
+                            testing
+                            ideas, and seeing what worked.
+                            It was very much a “let’s try this and see if it looks good” kind of project.
+                            Over time, I created several versions that now feel like his earlier evolutionary stages.
+                            There was even a prototype named Greg — a round, fingered robot — but let’s just say... we
+                            don’t
+                            talk about Greg.
+                        </p>
 
-                    <p class="text-gray-300 mb-6">
-                        I’ve always been a big fan of <em>Wall-E</em>, and he definitely
-                        <span class="text-sky-400 font-semibold">inspired Blizzy’s design.</span>
-                        One of Wall-E’s most memorable features is his
-                        <span class="text-sky-400 font-semibold">trash-cube belly</span> —
-                        I loved that concept of <span class="text-sky-400 font-semibold">functional charm.</span>
-                        With <span class="text-sky-400 font-semibold">winter</span> as my theme, I reimagined that idea:
-                        instead of trash cubes, Blizzy would
-                        <span class="text-sky-400 font-semibold">scoop up snow into his tummy</span>
-                        and then <span class="text-sky-400 font-semibold">blow it out through chutes</span> on his back.
-                        The <span class="text-sky-400 font-semibold">snow scoops</span> not only make him
-                        <span class="text-sky-400 font-semibold">practical</span> but also
-                        <span class="text-sky-400 font-semibold">playful</span> — perfect for an
-                        <span class="text-sky-400 font-semibold">impromptu snowball fight</span> if needed.
-                    </p>
+                        <p class="text-gray-300 mb-6">
+                            I’ve always been a big fan of <em>Wall-E</em>, and he definitely
+                            <span class="text-sky-400 font-semibold">inspired Blizzy’s design.</span>
+                            One of Wall-E’s most memorable features is his trash-cube belly —
+                            I loved that concept of functional charm.
+                            With <span class="text-sky-400 font-semibold">winter</span> as my theme, I reimagined that
+                            idea:
+                            instead of trash cubes, Blizzy would scoop up snow into his tummy
+                            and then blow it out through chutes on his back.
+                            The snow scoops not only make him practical but also playful — perfect for an impromptu
+                            snowball
+                            fight if needed.
+                        </p>
 
-                    <p class="text-gray-300 mb-6">
-                        I aimed for a <span class="text-sky-400 font-semibold">balanced design</span> — something that
-                        feels
-                        <span class="text-sky-400 font-semibold">friendly yet slightly intimidating.</span>
-                        The goal was to make him approachable but sturdy enough that people wouldn’t be tempted to
-                        <span class="text-sky-400 font-semibold">kick or damage him</span>
-                        (because, let’s be honest,
-                        <span class="text-sky-400 font-semibold">humans can be pesky like that</span>).
-                        To give him a touch of personality, I added a
-                        <span class="text-sky-400 font-semibold">cute Russian Ushanka</span> — not only to make him feel
-                        a bit more
-                        <span class="text-sky-400 font-semibold">human and relatable</span>, but also, of course, to
-                        <span class="text-sky-400 font-semibold">keep those circuits warm.</span>
-                    </p>
+                        <p class="text-gray-300 mb-6">
+                            I aimed for a balanced design — something that feels friendly yet slightly intimidating.
+                            The goal was to make him approachable but sturdy enough that people wouldn’t be tempted to
+                            kick or damage him (because, let’s be honest, humans can be pesky like that).
+                            To give him a touch of personality, I added a
+                            <span class="text-sky-400 font-semibold">Russian Ushanka</span> — not only to make him feel
+                            a bit more human and relatable, but also, of course, to
+                            keep those circuits warm.
+                        </p>
 
 
 
-                </div>
-                <div class=" w-full grid grid-cols-1 sm:grid-cols-2 gap-6 mr-8">
-                    <!-- Right: Images -->
-                    <div class="relative group">
-                        <img src="Pictures/Robuddy/Blockout3.png" alt="Windmill Asset 05"
-                            class="rounded-2xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
-
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                                <i data-feather="maximize" class="w-6 h-6"></i>
-                            </button>
-                        </div>
                     </div>
-                    <div class="relative group">
-                        <img src="Pictures/Robuddy/Blockout4.png" alt="Windmill Asset 04"
-                            class="rounded-2xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                                <i data-feather="maximize" class="w-6 h-6"></i>
-                            </button>
+                    <div class=" w-full grid grid-cols-1 sm:grid-cols-2 gap-6 mr-8">
+                        <!-- Right: Images -->
+                        <div class="relative group">
+                            <img src="Pictures/Robuddy/Blockout3.png" alt="Windmill Asset 05"
+                                class="rounded-2xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
+
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                    class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Swiper Gallery -->
-                    <div class="relative group block gallery-image sm:col-span-2">
-                        <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="Pictures/Robuddy/Blockout6.png" alt="Tech Project"
-                                        class="w-full h-full object-cover">
+                        <div class="relative group">
+                            <img src="Pictures/Robuddy/Blockout4.png" alt="Windmill Asset 04"
+                                class="rounded-2xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                    class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Swiper Gallery -->
+                        <div class="relative group block gallery-image sm:col-span-2">
+                            <div class="swiper mySwiper aspect-square mx-auto rounded-xl overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/Robuddy/Blockout6.png" alt="Tech Project"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
+                                        Blockouts</div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/Robuddy/Blockout7.png" alt="Abstract Art"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="Pictures/Robuddy/Blockout5.png" alt="Minimal Design"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination "></div>
+                                <div
+                                    class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
                                 <div
-                                    class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 px-3 py-1 rounded-full text-sm text-gray-300">
-                                    Blockouts</div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/Robuddy/Blockout7.png" alt="Abstract Art"
-                                        class="w-full h-full object-cover">
+                                    class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="Pictures/Robuddy/Blockout5.png" alt="Minimal Design"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination "></div>
-                            <div
-                                class="swiper-button swiper-button-prev left-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
-                            </div>
-                            <div
-                                class="swiper-button swiper-button-next right-4 bg-gray-800 bg-opacity-80 hover:bg-indigo-600 p-4 rounded-full backdrop-blur-sm flex items-center justify-center">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
+        </section>
 
-    <!-- Blockout Section -->
-    <section class="py-20 bg-gray-800">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Gallery Item 1 -->
-                    <div class="relative group">
-                        <div class="overflow-hidden rounded-xl aspect-[4:3]">
-                            <img src="Pictures/Robuddy/Blizzy1.png" alt="Pastel Titan Texture Breakdown"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                        </div>
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                                <i data-feather="maximize" class="w-6 h-6"></i>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <!-- Gallery Item 2 -->
-                    <div class="relative group">
-                        <div class="overflow-hidden rounded-xl aspect-[4:3]">
-                            <img src="Pictures/Robuddy/Blizzy2.png" alt="Pastel Titan Wireframe"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                        </div>
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                                <i data-feather="maximize" class="w-6 h-6"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Gallery Item 3 -->
-                    <div class="relative group">
-                        <div class="overflow-hidden rounded-xl aspect-[4:3]">
-                            <img src="Pictures/Robuddy/Blizzy3.png" alt="Pastel Titan Texture Breakdown"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                        </div>
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                                <i data-feather="maximize" class="w-6 h-6"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-    </section>
-
-    <!-- Breakdown Section -->
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Showcase<h2>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Blockout Section -->
+        <section class="py-20 bg-gray-800">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Gallery Item 1 -->
                         <div class="relative group">
-                            <div class="overflow-hidden rounded-xl aspect-video">
-                                <iframe width="740" height="415"
-                                    src="https://www.youtube.com/embed/ITp6HwkwL7c?si=M8xmY_kQzMHCmg3Z&amp;controls=0"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="overflow-hidden rounded-xl aspect-[4:3]">
+                                <img src="Pictures/Robuddy/Blizzy1.png" alt="Pastel Titan Texture Breakdown"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                    class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </button>
                             </div>
 
                         </div>
 
                         <!-- Gallery Item 2 -->
                         <div class="relative group">
-                            <div class="overflow-hidden rounded-xl aspect-video">
-                                <div class="sketchfab-embed-wrapper"> <iframe title="DAE Robuddy - Blizzy"
-                                        frameborder="0" allowfullscreen mozallowfullscreen="true"
-                                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-                                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-                                        web-share
-                                        src="https://sketchfab.com/models/d33b2855761147318bd8cfb8f0d51f27/embed?autostart=1&camera=0"
-                                        width="740" height="415">
-                                    </iframe> </div>
+                            <div class="overflow-hidden rounded-xl aspect-[4:3]">
+                                <img src="Pictures/Robuddy/Blizzy2.png" alt="Pastel Titan Wireframe"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                    class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Gallery Item 3 -->
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-xl aspect-[4:3]">
+                                <img src="Pictures/Robuddy/Blizzy3.png" alt="Pastel Titan Texture Breakdown"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                    class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+
+        <!-- Breakdown Section -->
+        <section class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">Showcase<h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Gallery Item 1 -->
+                            <div class="relative group">
+                                <div class="overflow-hidden rounded-xl aspect-video">
+                                    <iframe width="740" height="415"
+                                        src="https://www.youtube.com/embed/ITp6HwkwL7c?si=M8xmY_kQzMHCmg3Z&amp;controls=0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+
                             </div>
 
+                            <!-- Gallery Item 2 -->
+                            <div class="relative group">
+                                <div class="overflow-hidden rounded-xl aspect-video">
+                                    <div class="sketchfab-embed-wrapper"> <iframe title="DAE Robuddy - Blizzy"
+                                            frameborder="0" allowfullscreen mozallowfullscreen="true"
+                                            webkitallowfullscreen="true"
+                                            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                            execution-while-out-of-viewport execution-while-not-rendered web-share
+                                            src="https://sketchfab.com/models/d33b2855761147318bd8cfb8f0d51f27/embed?autostart=1&camera=0"
+                                            width="740" height="415">
+                                        </iframe> </div>
+                                </div>
+
+                            </div>
                         </div>
+            </div>
+        </section>
+
+        <!-- Project Navigation -->
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
+                        <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
+                        Back to Work
+                    </a>
+                    <a href="AncientTides.html" class="flex items-center group">
+                        Next Project: Ancient Tides
+                        <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 bg-gray-950">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <div class="text-2xl font-bold">BV</div>
+                        <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
                     </div>
-        </div>
-    </section>
-
-    <!-- Project Navigation -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between">
-                <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
-                    <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
-                    Back to Work
-                </a>
-                <a href="AncientTides.html" class="flex items-center group">
-                    Next Project: Ancient Tides
-                    <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
+                    <div class="flex space-x-6">
+                        <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
+                        <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                        <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                    </div>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
-                </div>
+        </footer>
+
+        <!-- Image Zoom Modal -->
+        <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
+            <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
+                <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+                <button onclick="downloadImage()"
+                    class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="download" class="w-6 h-6"></i>
+                </button>
             </div>
         </div>
-    </footer>
 
-    <!-- Image Zoom Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
-        <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
-            <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
-            <button onclick="closeModal()"
-                class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="x" class="w-6 h-6"></i>
-            </button>
-            <button onclick="downloadImage()"
-                class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="download" class="w-6 h-6"></i>
-            </button>
-        </div>
-    </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                once: true
+            });
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            once: true
-        });
+            // Initialize feather icons
+            feather.replace();
 
-        // Initialize feather icons
-        feather.replace();
+            // Image zoom functionality
+            function zoomImage(imgElement) {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImage');
 
-        // Image zoom functionality
-        function zoomImage(imgElement) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-
-            modalImg.src = imgElement.src;
-            modalImg.alt = imgElement.alt;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-
-        function downloadImage() {
-            const imgSrc = document.getElementById('modalImage').src;
-            const link = document.createElement('a');
-            link.href = imgSrc;
-            link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
-        // Close modal when clicking outside image
-        document.getElementById('imageModal').addEventListener('click', function (e) {
-            if (e.target === this) {
-                closeModal();
+                modalImg.src = imgElement.src;
+                modalImg.alt = imgElement.alt;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             }
-        });
 
-        // Close modal with ESC key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
-                closeModal();
+            function closeModal() {
+                document.getElementById('imageModal').classList.add('hidden');
+                document.body.style.overflow = '';
             }
-        });
-    </script>
-    <!-- Fullscreen Zoom Overlay -->
-    <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
-        <img id="zoomedImage" src="" alt="Zoomed view"
-            class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-700 scale-95 opacity-0" />
-    </div>
 
-    <script>
-        function zoomImage(imgElement) {
-            const overlay = document.getElementById('zoomOverlay');
-            const zoomed = document.getElementById('zoomedImage');
-            zoomed.src = imgElement.src;
+            function downloadImage() {
+                const imgSrc = document.getElementById('modalImage').src;
+                const link = document.createElement('a');
+                link.href = imgSrc;
+                link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
 
-            // show overlay
-            overlay.classList.remove('hidden');
-            setTimeout(() => {
-                zoomed.classList.remove('scale-95', 'opacity-0');
-                zoomed.classList.add('scale-100', 'opacity-100');
-            }, 10);
-        }
+            // Close modal when clicking outside image
+            document.getElementById('imageModal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
 
-        // close overlay when clicking outside the image
-        document.getElementById('zoomOverlay').addEventListener('click', (e) => {
-            if (e.target.id === 'zoomOverlay') {
+            // Close modal with ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        </script>
+        <!-- Fullscreen Zoom Overlay -->
+        <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+            <img id="zoomedImage" src="" alt="Zoomed view"
+                class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-700 scale-95 opacity-0" />
+        </div>
+
+        <script>
+            function zoomImage(imgElement) {
+                const overlay = document.getElementById('zoomOverlay');
                 const zoomed = document.getElementById('zoomedImage');
-                zoomed.classList.add('scale-95', 'opacity-0');
+                zoomed.src = imgElement.src;
+
+                // show overlay
+                overlay.classList.remove('hidden');
                 setTimeout(() => {
-                    document.getElementById('zoomOverlay').classList.add('hidden');
-                }, 200);
+                    zoomed.classList.remove('scale-95', 'opacity-0');
+                    zoomed.classList.add('scale-100', 'opacity-100');
+                }, 10);
             }
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Loop through all Swipers on the page
-            document.querySelectorAll(".swiper").forEach((swiperEl, index) => {
-                // Make unique classes for each Swiper
-                const next = swiperEl.querySelector(".swiper-button-next");
-                const prev = swiperEl.querySelector(".swiper-button-prev");
-                const pagination = swiperEl.querySelector(".swiper-pagination");
 
-                // Give them unique class names
-                next.classList.add(`swiper-next-${index}`);
-                prev.classList.add(`swiper-prev-${index}`);
-                pagination.classList.add(`swiper-pagination-${index}`);
+            // close overlay when clicking outside the image
+            document.getElementById('zoomOverlay').addEventListener('click', (e) => {
+                if (e.target.id === 'zoomOverlay') {
+                    const zoomed = document.getElementById('zoomedImage');
+                    zoomed.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        document.getElementById('zoomOverlay').classList.add('hidden');
+                    }, 200);
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Loop through all Swipers on the page
+                document.querySelectorAll(".swiper").forEach((swiperEl, index) => {
+                    // Make unique classes for each Swiper
+                    const next = swiperEl.querySelector(".swiper-button-next");
+                    const prev = swiperEl.querySelector(".swiper-button-prev");
+                    const pagination = swiperEl.querySelector(".swiper-pagination");
 
-                // Initialize Swiper
-                new Swiper(swiperEl, {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    // autoplay: {
-                    //     delay: 3000,
-                    //     disableOnInteraction: true,
-                    // },
-                    navigation: {
-                        nextEl: `.swiper-next-${index}`,
-                        prevEl: `.swiper-prev-${index}`,
-                    },
-                    pagination: {
-                        el: `.swiper-pagination-${index}`,
-                        clickable: true,
-                        dynamicBullets: true,
-                    },
+                    // Give them unique class names
+                    next.classList.add(`swiper-next-${index}`);
+                    prev.classList.add(`swiper-prev-${index}`);
+                    pagination.classList.add(`swiper-pagination-${index}`);
+
+                    // Initialize Swiper
+                    new Swiper(swiperEl, {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        // autoplay: {
+                        //     delay: 3000,
+                        //     disableOnInteraction: true,
+                        // },
+                        navigation: {
+                            nextEl: `.swiper-next-${index}`,
+                            prevEl: `.swiper-prev-${index}`,
+                        },
+                        pagination: {
+                            el: `.swiper-pagination-${index}`,
+                            clickable: true,
+                            dynamicBullets: true,
+                        },
+                    });
                 });
             });
-        });
 
-        // Initialize Feather Icons
-        feather.replace();
-    </script>
+            // Initialize Feather Icons
+            feather.replace();
+        </script>
 </body>
 
 </html>

@@ -8,32 +8,114 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .swiper-slide {
+            transition: all 0.5s ease;
+        }
+
+        .swiper-bundle {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.2);
+        }
+
+        .swiper-button {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+        }
+
+        .swiper:hover .swiper-button {
+            opacity: 1;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 60px;
+            /* button size */
+            height: 60px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style the arrow icon inside separately */
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 24px;
+            /* icon size */
+            color: #ffffff;
+            /* icon color */
+        }
+
+        :root {
+            --swiper-navigation-color: #ffffff;
+            /* Set your desired color */
+            --swiper-navigation-size: 32px;
+            /* Set your desired size */
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e1b4b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed;
+            border-radius: 4px;
+        }
+
+        .swiper-pagination-bullet {
+            background: #ffffff80;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #ff4f81;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 text-white">
-    <!-- Navigation -->
-    <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold">BV</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html#work" class="nav-link">Work</a>
-                    <a href="index.html#about" class="nav-link">About</a>
-                    <a href="index.html#skills" class="nav-link">Skills</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+    
+<!-- Navigation -->
+<nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">BV</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">← Home</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#details" class="nav-link">Details</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </div>
+      <button class="md:hidden focus:outline-none">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Project Header -->
-    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <section id="overview" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
-                <span class="inline-block px-4 py-1 bg-indigo-600 rounded-full text-sm mb-4">Group Projects</span>
+                <span class="inline-block px-4 py-1 bg-indigo-600 rounded-full text-sm mb-4">Client Projects</span>
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Ancient Tides</h1>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">The underwater exploration game where you dive into
                     the ocean to find all the ancient fish species. Created for 3Museos.</p>
@@ -58,14 +140,17 @@
                 <div data-aos="fade-left">
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
-                        <p class="text-gray-300 mb-4">Fluffy Nature is a peaceful, stylized environment built using
-                            Unity’s terrain system. The scene captures the warmth and serenity of nature through soft
-                            lighting, gentle motion, and rich atmosphere. Leaves drift through the air, branches sway
-                            with the wind, and streams flow calmly through the landscape — creating a living, breathing
-                            world. Every element was crafted to complement one another, blending stylized visuals with
-                            semi-realistic details to evoke a cozy and tranquil outdoor setting. </p>
-                        <p class="text-gray-300">This project took about 3 months to make and was created to
-                            practice environment art and improve my skills in creating stylized assets.</p>
+                        <p class="text-gray-300 mb-4">Ancient Tides is an underwater educational game developed for <a
+                                href="https://www.3museos.com"
+                                style="color: #1d5ed8; text-decoration: underline;">3Museos</a>, a museum in Mexico. The
+                            game invites players to explore the mysteries of the deep
+                            sea, uncovering species of ancient fish once thought to be extinct — until a seismic shift
+                            opened a hidden underwater world. By diving into this submerged realm, players can ride,
+                            read, and discover the living fossils that have resurfaced through this geological wonder.
+                        </p>
+                        <p class="text-gray-300">Designed to blend education and exploration, Ancient Tides aims to
+                            inspire curiosity about marine life, evolution, and the power of natural history through
+                            interactive discovery.</p>
                     </div>
 
                     <div>
@@ -86,12 +171,19 @@
                             <span class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
                                 <img src="Pictures/Logos/PureRef.png" class="w-5 h-5 mr-2"> PureRef
                             </span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                                <img src="Pictures/Logos/Github.png" class="w-5 h-5 mr-2"> Github
+                            </span>
+                            <span class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                                <img src="Pictures/Logos/HacknPlan.png" class="w-5 h-5 mr-2"> HacknPlan
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<section id="details"
 
 
     <!-- Project Details -->
@@ -101,37 +193,28 @@
                 <div>
                     <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
                     <p class="text-gray-300 mb-6">
-                        Fluffy Nature is a cozy and atmospheric environment scene created using a wide range of Unity’s
-                        environment tools. Throughout the project, I focused on building a natural, semi-realistic world
-                        that feels alive and cohesive. I made extensive use of Unity’s terrain system for shaping the
-                        landscape and populating it with detailed foliage and props.
-
-
+                        Ancient Tides is an educational game created for Tres Museos, a museum in Mexico. The
+                        project
+                        was designed to showcase the museum’s collection of ancient fish fossils in an interactive and
+                        engaging way. Visitors can explore the underwater world in-game and then locate the same fossils
+                        in the museum itself, creating a unique connection between digital discovery and real-world
+                        exhibits.
 
 
                     </p>
                     <p class="text-gray-300 mb-6">
-                        To bring the environment to life, I created all the shaders for the grass, trees, and water
-                        using Unity’s Shader Graph, allowing for subtle movement, reflections, and dynamic wind effects.
-                        The trees were modeled in TreeIt, giving me full control over their shapes and branch animation.
-                        I also implemented Level of Detail (LOD) systems to optimize performance, ensuring smooth
-                        playback even with dense vegetation and effects.
+                        Since the game was intended for audiences of all ages, it was developed without any form of
+                        violence or mature content, ensuring a family-friendly experience that’s both informative and
+                        immersive.
                     </p>
-                    <p class="text-gray-300 mb-6">
-                        Lighting played a major role in defining the mood of the scene. I used a soft directional light
-                        combined with baked global illumination to achieve a warm and natural atmosphere while
-                        maintaining high performance. Every technical and artistic decision — from shader creation to
-                        optimization — contributed to crafting a lush, inviting world that feels both stylized and
-                        believable.
-                    </p>
+
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
                                 <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
                             </div>
                             <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Polycount:</span> ~6,6 thousand triangles optimized and game
-                                ready
+                                <span class="font-semibold">Team Size:</span> 5 People
                             </p>
                         </div>
                         <div class="flex items-start">
@@ -139,7 +222,7 @@
                                 <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
                             </div>
                             <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Textures:</span> 2K PBR materials with Substance Painter
+                                <span class="font-semibold">Timespan:</span> 1 Day a week for 4 months.
                             </p>
                         </div>
                         <div class="flex items-start">
@@ -147,7 +230,8 @@
                                 <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
                             </div>
                             <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Rendered:</span> Done in Substance Painter
+                                <span class="font-semibold">Client:</span> <a href="https://www.3museos.com"
+                                    style="color: #1d5ed8; text-decoration: underline;">3Museos</a>
                             </p>
                         </div>
                     </div>
@@ -155,98 +239,309 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-4">Creation Process</h3>
                     <p class="mb-6">
-                        Below is a step-by-step breakdown of how the <span class="font-semibold">Fluffy Nature</span>
-                        scene was created, from initial blockout to final polish.
+                        In the end, our team created an open-world underwater exploration game where players can scan,
+                        ride, and observe various species of fish while enjoying the tranquil ocean scenery. The visual
+                        direction was heavily inspired by the art style of Abzû, emphasizing a calm and immersive
+                        underwater atmosphere.
+                    </p>
+                    <p class="mb-6">
+                        With a small team of just five people working one day a week, we had to carefully scope down the
+                        project and rely on free assets where possible. My primary responsibility was designing and
+                        creating the unique fish species — the core focus of the game. Each fish features a low-poly
+                        model, basic textures, and an internal skeleton rigged to follow natural movement patterns.
+                    </p>
+                    <p class="mb-6">
+                        The only fully hand-animated creature is the Tortuga Marina, a sea turtle that required a custom
+                        animation approach since its motion differed from the other fish. I studied reference footage of
+                        ancient turtles to accurately capture its distinctive swimming style.
+                    </p>
+                    <p class="mb-6">
+                        To streamline production, the rest of the fish use a custom shader developed by one of my
+                        teammates, allowing them to animate dynamically without traditional keyframe animation.
                     </p>
 
-                    <ol class="list-decimal list-inside space-y-4">
-                        <li>
-                            <span class="font-semibold">Blockout & Terrain</span>
-                            <p>I started by blocking out the overall layout using <span class="font-semibold">Unity’s
-                                    terrain tools</span>, defining elevation, paths, and major silhouette elements so
-                                the composition worked from a distance as well as close up.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Real-time Lighting Setup</span>
-                            <p>I established the mood using Unity’s real-time (non-baked) lighting settings —
-                                directional light, ambient probes, and subtle post-processing — to keep the scene
-                                dynamic and responsive during iteration.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Tree Design in TreeIt</span>
-                            <p>Trees were procedurally designed in <span class="font-semibold">TreeIt</span>, allowing
-                                fast exploration of trunk shapes, branch patterns, and foliage density while maintaining
-                                a consistent stylized look across the forest.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Modeling Props in Blender</span>
-                            <p>Rocks, bushes, and other small vegetation were modeled in <span
-                                    class="font-semibold">Blender</span>, focusing on silhouette variety and optimized
-                                topology for efficient in-engine use.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Texturing in Substance Painter</span>
-                            <p>Bark, stone, and hard-surface textures were hand-painted and baked in <span
-                                    class="font-semibold">Substance Painter</span>, producing stylized but believable
-                                surface detail and normal information for lighting interaction.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Leaf Cutouts in Photoshop</span>
-                            <p>Leaf shapes and alpha cutouts were created and refined in <span
-                                    class="font-semibold">Photoshop</span> to produce crisp, efficient foliage sprites
-                                that read well at various distances.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Shader Authoring with Shader Graph</span>
-                            <p>All vegetation and terrain materials (grass, trees, bushes) were implemented in <span
-                                    class="font-semibold">Unity’s Shader Graph</span>. I used gradient-driven color
-                                variation, wind-driven vertex animation, and lightweight optimizations to balance visual
-                                richness with performance.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Scene Refinement</span>
-                            <p>With assets in place, I iterated on placement, scale, and density — hand-tuning clusters
-                                and paths to create interesting sightlines and natural flow throughout the environment.
-                            </p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Water, Moss & VFX</span>
-                            <p>I developed a stylized water shader and supplementary materials like moss overlays, then
-                                layered subtle VFX such as falling leaves and pollen to add motion
-                                and atmosphere.</p>
-                        </li>
-
-                        <li>
-                            <span class="font-semibold">Cameras & Presentation</span>
-                            <p>Finally, I set up dynamic camera rigs using <span class="font-semibold">Unity
-                                    Cinemachine</span> to compose cinematic shots, test readability, and present the
-                                scene from its best angles.</p>
-                        </li>
-                    </ol>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blockout Section -->
+
+    <!-- Project Details -->
+    <section class="py-12 bg-gray-800/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">My Part</h2>
+                    <p class="text-gray-300 mb-6">
+                        As the only 3D artist in the group, I was responsible for creating all the unique 3D assets,
+                        including every creature in the game. Each model required an internal skeleton to showcase what
+                        the bones would look like if they were real. Since the game features see-through models, these
+                        skeletal structures also needed to be clearly visible in-game.
+
+
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        To work within Abzû’s visual style, I began with extensive research — playing the game and
+                        studying developer talks to understand their artistic approach. From this, I created a detailed
+                        style guide and a style walkthrough, since the Abzû style doesn’t follow the traditional
+                        model-first, texture-later workflow. Instead, the textures are designed to flow with the shape
+                        of the model, meaning the texturing process must be considered early in the modeling stage.
+                    </p>
+
+
+                </div>
+                <div>
+                    <iframe width="768" height="432"
+                        src="https://miro.com/app/live-embed/uXjVJ8CmOS8=/?embedMode=view_only_without_ui&moveToViewport=-33250,65169,18296,8956&embedId=651363466906"
+                        frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= ANCIENT TIDES GALLERY ================= -->
+    <section id="gallery" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">Fish Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- === Gallery Item: Protosphyraena === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/Protosphyraena.png" alt="Protosphyraena"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/ProtosphyraenaSkeleton.png" alt="Protosphyraena Skeleton"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/Protosphyraena.gif" alt="Protosphyraena Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- === Gallery Item: Ptychodus Mortoni === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/PtychodusMortoni.png" alt="Ptychodus Mortoni"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/PtychodusMortoniSkeleton.png"
+                                alt="Ptychodus Mortoni Skeleton"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/Pthychodus.gif" alt="Ptychodus Mortoni Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- === Gallery Item: Rhinobastos === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/Rhinobastos.png" alt="Rhinobastos"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/RhinobastosSkeleton2.png" alt="Rhinobastos Skeleton"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/Rhinobastos.gif" alt="Rhinobastos Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- === Gallery Item: Vallecillosaurus === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/Vallecillosaurus.png" alt="Vallecillosaurus"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/VallecillosaurusSkeleton.png"
+                                alt="Vallecillosaurus Skeleton"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/Vallecillosaurus.gif" alt="Vallecillosaurus Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- === Gallery Item: Goulmimichthys === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/Goulmimichthys.png" alt="Goulmimichthys"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/GoulmimichthysSkeleton.png" alt="Goulmimichthys Skeleton"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/Goulmimichthys.gif" alt="Goulmimichthys Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- === Gallery Item: Tortuga Marina === -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/TortugaMarina.png" alt="Tortuga Marina"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="relative group">
+                            <img src="Pictures/AncientTides/TortugaMarinaTop.png" alt="Tortuga Marina Top"
+                                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                    <i data-feather="maximize" class="w-6 h-6"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="Pictures/AncientTides/TortugaMarina.gif" alt="Tortuga Marina Animation"
+                            class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Game Gallery -->
     <section class="py-20 bg-gray-800/50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center">Game Gallery</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="relative group">
                     <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Texture Breakdown"
+                        <img src="Pictures/AncientTides/First area.png" alt="Pastel Titan Texture Breakdown"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
                     </div>
 
@@ -263,8 +558,7 @@
                 <!-- Gallery Item 2 -->
                 <div class="relative group">
                     <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_02_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Wireframe"
+                        <img src="Pictures/AncientTides/Area 2.png" alt="Pastel Titan Wireframe"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
                     </div>
                     <div
@@ -279,8 +573,7 @@
                 <!-- Gallery Item 3 -->
                 <div class="relative group">
                     <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_03_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Texture Breakdown"
+                        <img src="Pictures/AncientTides/Area 3.png" alt="Pastel Titan Texture Breakdown"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
                     </div>
                     <div
@@ -290,100 +583,6 @@
                             <i data-feather="maximize" class="w-6 h-6"></i>
                         </button>
                     </div>
-                </div>
-                <!-- Gallery Item 4 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_04_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Pose Variation"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 5 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_05_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Detail Shot 2"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 6 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="480" height="270"
-                            src="https://www.youtube.com/embed/alFNywQdaL0?si=tHeq0kE-qgOIEL1p"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="relative group" data-aos="fade-up">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <div class="sketchfab-embed-wrapper w-full h-full md:h[600px]">
-                            <iframe width="740" height="415"
-                                src="https://www.youtube.com/embed/alFNywQdaL0?si=p7NrJzjgJY3FRZbz&amp;start=1"
-                                title="YouTube video player" frameborder="0" autoplay="true"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-    </section> -->
-
-    <!-- Breakdown Section -->
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Breakdown</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="740" height="415"
-                            src="https://www.youtube.com/embed/f5eJv3ege58?si=_PN9VOyI23GOk0o7"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="740" height="415"
-                            src="https://www.youtube.com/embed/CxlFc5E-ojk?si=a3tzPpOiQatnvNmc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -499,7 +698,7 @@
     <!-- Fullscreen Zoom Overlay -->
     <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
         <img id="zoomedImage" src="" alt="Zoomed view"
-            class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95 opacity-0" />
+            class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-700 scale-95 opacity-0" />
     </div>
 
     <script>
@@ -526,6 +725,45 @@
                 }, 200);
             }
         });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Loop through all Swipers on the page
+            document.querySelectorAll(".swiper").forEach((swiperEl, index) => {
+                // Make unique classes for each Swiper
+                const next = swiperEl.querySelector(".swiper-button-next");
+                const prev = swiperEl.querySelector(".swiper-button-prev");
+                const pagination = swiperEl.querySelector(".swiper-pagination");
+
+                // Give them unique class names
+                next.classList.add(`swiper-next-${index}`);
+                prev.classList.add(`swiper-prev-${index}`);
+                pagination.classList.add(`swiper-pagination-${index}`);
+
+                // Initialize Swiper
+                new Swiper(swiperEl, {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    // autoplay: {
+                    //     delay: 3000,
+                    //     disableOnInteraction: true,
+                    // },
+                    navigation: {
+                        nextEl: `.swiper-next-${index}`,
+                        prevEl: `.swiper-prev-${index}`,
+                    },
+                    pagination: {
+                        el: `.swiper-pagination-${index}`,
+                        clickable: true,
+                        dynamicBullets: true,
+                    },
+                });
+            });
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
     </script>
 </body>
 

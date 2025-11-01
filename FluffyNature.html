@@ -11,16 +11,17 @@
 </head>
 
 <body class="bg-gray-900 text-white">
+
     <!-- Navigation -->
     <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold">BV</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html#work" class="nav-link">Work</a>
-                    <a href="index.html#about" class="nav-link">About</a>
-                    <a href="index.html#skills" class="nav-link">Skills</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="index.html" class="nav-link">← Home</a>
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#details" class="nav-link">Details</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
                     <i data-feather="menu"></i>
@@ -29,8 +30,9 @@
         </div>
     </nav>
 
+
     <!-- Project Header -->
-    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <section id="overview" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="inline-block px-4 py-1 bg-indigo-600 rounded-full text-sm mb-4">3D Game Art</span>
@@ -93,252 +95,270 @@
             </div>
         </div>
     </section>
+    <section id="details" <!-- Project Details -->
+        <section class="py-12 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-300 mb-6">
+                            Fluffy Nature is a cozy and atmospheric environment scene created using a wide range of
+                            Unity’s
+                            environment tools. Throughout the project, I focused on building a natural, semi-realistic
+                            world
+                            that feels alive and cohesive. I made extensive use of Unity’s terrain system for shaping
+                            the
+                            landscape and populating it with detailed foliage and props.
 
 
-    <!-- Project Details -->
-    <section class="py-12 bg-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                    <p class="text-gray-300 mb-6">
-                        Fluffy Nature is a cozy and atmospheric environment scene created using a wide range of Unity’s
-                        environment tools. Throughout the project, I focused on building a natural, semi-realistic world
-                        that feels alive and cohesive. I made extensive use of Unity’s terrain system for shaping the
-                        landscape and populating it with detailed foliage and props.
 
 
-
-
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                        To bring the environment to life, I created all the shaders for the grass, trees, and water
-                        using Unity’s Shader Graph, allowing for subtle movement, reflections, and dynamic wind effects.
-                        The trees were modeled in TreeIt, giving me full control over their shapes and branch animation.
-                        I also implemented Level of Detail (LOD) systems to optimize performance, ensuring smooth
-                        playback even with dense vegetation and effects.
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                        Lighting played a major role in defining the mood of the scene. I used a soft directional light
-                        combined with baked global illumination to achieve a warm and natural atmosphere while
-                        maintaining high performance. Every technical and artistic decision — from shader creation to
-                        optimization — contributed to crafting a lush, inviting world that feels both stylized and
-                        believable.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            To bring the environment to life, I created all the shaders for the grass, trees, and water
+                            using Unity’s Shader Graph, allowing for subtle movement, reflections, and dynamic wind
+                            effects.
+                            The trees were modeled in TreeIt, giving me full control over their shapes and branch
+                            animation.
+                            I also implemented Level of Detail (LOD) systems to optimize performance, ensuring smooth
+                            playback even with dense vegetation and effects.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            Lighting played a major role in defining the mood of the scene. I used a soft directional
+                            light
+                            combined with baked global illumination to achieve a warm and natural atmosphere while
+                            maintaining high performance. Every technical and artistic decision — from shader creation
+                            to
+                            optimization — contributed to crafting a lush, inviting world that feels both stylized and
+                            believable.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Polycount:</span> ~6,6 thousand triangles optimized and
+                                    game
+                                    ready
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Polycount:</span> ~6,6 thousand triangles optimized and game
-                                ready
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Textures:</span> 2K PBR materials with Substance Painter
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Textures:</span> 2K PBR materials with Substance Painter
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <p class="ml-3 text-gray-300">
+                                    <span class="font-semibold">Rendered:</span> Done in Substance Painter
+                                </p>
                             </div>
-                            <p class="ml-3 text-gray-300">
-                                <span class="font-semibold">Rendered:</span> Done in Substance Painter
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Creation Process</h3>
-                    <p class="mb-6">
-                        Below is a step-by-step breakdown of how the <span class="font-semibold">Fluffy Nature</span>
-                        scene was created, from initial blockout to final polish.
-                    </p>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Creation Process</h3>
+                        <p class="mb-6">
+                            Below is a step-by-step breakdown of how the <span class="font-semibold">Fluffy
+                                Nature</span>
+                            scene was created, from initial blockout to final polish.
+                        </p>
 
-                    <ol class="list-decimal list-inside space-y-4">
-                        <li>
-                            <span class="font-semibold">Blockout & Terrain</span>
-                            <p>I started by blocking out the overall layout using <span class="font-semibold">Unity’s
-                                    terrain tools</span>, defining elevation, paths, and major silhouette elements so
-                                the composition worked from a distance as well as close up.</p>
-                        </li>
+                        <ol class="list-decimal list-inside space-y-4">
+                            <li>
+                                <span class="font-semibold">Blockout & Terrain</span>
+                                <p>I started by blocking out the overall layout using <span
+                                        class="font-semibold">Unity’s
+                                        terrain tools</span>, defining elevation, paths, and major silhouette elements
+                                    so
+                                    the composition worked from a distance as well as close up.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Real-time Lighting Setup</span>
-                            <p>I established the mood using Unity’s real-time (non-baked) lighting settings —
-                                directional light, ambient probes, and subtle post-processing — to keep the scene
-                                dynamic and responsive during iteration.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Real-time Lighting Setup</span>
+                                <p>I established the mood using Unity’s real-time (non-baked) lighting settings —
+                                    directional light, ambient probes, and subtle post-processing — to keep the scene
+                                    dynamic and responsive during iteration.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Tree Design in TreeIt</span>
-                            <p>Trees were procedurally designed in <span class="font-semibold">TreeIt</span>, allowing
-                                fast exploration of trunk shapes, branch patterns, and foliage density while maintaining
-                                a consistent stylized look across the forest.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Tree Design in TreeIt</span>
+                                <p>Trees were procedurally designed in <span class="font-semibold">TreeIt</span>,
+                                    allowing
+                                    fast exploration of trunk shapes, branch patterns, and foliage density while
+                                    maintaining
+                                    a consistent stylized look across the forest.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Modeling Props in Blender</span>
-                            <p>Rocks, bushes, and other small vegetation were modeled in <span
-                                    class="font-semibold">Blender</span>, focusing on silhouette variety and optimized
-                                topology for efficient in-engine use.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Modeling Props in Blender</span>
+                                <p>Rocks, bushes, and other small vegetation were modeled in <span
+                                        class="font-semibold">Blender</span>, focusing on silhouette variety and
+                                    optimized
+                                    topology for efficient in-engine use.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Texturing in Substance Painter</span>
-                            <p>Bark, stone, and hard-surface textures were hand-painted and baked in <span
-                                    class="font-semibold">Substance Painter</span>, producing stylized but believable
-                                surface detail and normal information for lighting interaction.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Texturing in Substance Painter</span>
+                                <p>Bark, stone, and hard-surface textures were hand-painted and baked in <span
+                                        class="font-semibold">Substance Painter</span>, producing stylized but
+                                    believable
+                                    surface detail and normal information for lighting interaction.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Leaf Cutouts in Photoshop</span>
-                            <p>Leaf shapes and alpha cutouts were created and refined in <span
-                                    class="font-semibold">Photoshop</span> to produce crisp, efficient foliage sprites
-                                that read well at various distances.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Leaf Cutouts in Photoshop</span>
+                                <p>Leaf shapes and alpha cutouts were created and refined in <span
+                                        class="font-semibold">Photoshop</span> to produce crisp, efficient foliage
+                                    sprites
+                                    that read well at various distances.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Shader Authoring with Shader Graph</span>
-                            <p>All vegetation and terrain materials (grass, trees, bushes) were implemented in <span
-                                    class="font-semibold">Unity’s Shader Graph</span>. I used gradient-driven color
-                                variation, wind-driven vertex animation, and lightweight optimizations to balance visual
-                                richness with performance.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Shader Authoring with Shader Graph</span>
+                                <p>All vegetation and terrain materials (grass, trees, bushes) were implemented in <span
+                                        class="font-semibold">Unity’s Shader Graph</span>. I used gradient-driven color
+                                    variation, wind-driven vertex animation, and lightweight optimizations to balance
+                                    visual
+                                    richness with performance.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Scene Refinement</span>
-                            <p>With assets in place, I iterated on placement, scale, and density — hand-tuning clusters
-                                and paths to create interesting sightlines and natural flow throughout the environment.
-                            </p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Scene Refinement</span>
+                                <p>With assets in place, I iterated on placement, scale, and density — hand-tuning
+                                    clusters
+                                    and paths to create interesting sightlines and natural flow throughout the
+                                    environment.
+                                </p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Water, Moss & VFX</span>
-                            <p>I developed a stylized water shader and supplementary materials like moss overlays, then
-                                layered subtle VFX such as falling leaves and pollen to add motion
-                                and atmosphere.</p>
-                        </li>
+                            <li>
+                                <span class="font-semibold">Water, Moss & VFX</span>
+                                <p>I developed a stylized water shader and supplementary materials like moss overlays,
+                                    then
+                                    layered subtle VFX such as falling leaves and pollen to add motion
+                                    and atmosphere.</p>
+                            </li>
 
-                        <li>
-                            <span class="font-semibold">Cameras & Presentation</span>
-                            <p>Finally, I set up dynamic camera rigs using <span class="font-semibold">Unity
-                                    Cinemachine</span> to compose cinematic shots, test readability, and present the
-                                scene from its best angles.</p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blockout Section -->
-    <section class="py-20 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Texture Breakdown"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_02_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Wireframe"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_03_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Texture Breakdown"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- Gallery Item 4 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_04_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Pose Variation"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 5 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <img src="Pictures/FluffyNature/FluffyNature_Screenshots_05_Final_Bram_Verschaeve.png"
-                            alt="Pastel Titan Detail Shot 2"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
-                            class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
-                            <i data-feather="maximize" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 6 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="480" height="270"
-                            src="https://www.youtube.com/embed/alFNywQdaL0?si=tHeq0kE-qgOIEL1p"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <li>
+                                <span class="font-semibold">Cameras & Presentation</span>
+                                <p>Finally, I set up dynamic camera rigs using <span class="font-semibold">Unity
+                                        Cinemachine</span> to compose cinematic shots, test readability, and present the
+                                    scene from its best angles.</p>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- <section class="py-10 bg-gray-800/50">
+        <!-- Blockout Section -->
+        <section id="gallery" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">Project Gallery</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <img src="Pictures/FluffyNature/FluffyNature_Final_Bram_Verschaeve.png"
+                                alt="Pastel Titan Texture Breakdown"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <img src="Pictures/FluffyNature/FluffyNature_Screenshots_02_Final_Bram_Verschaeve.png"
+                                alt="Pastel Titan Wireframe"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <img src="Pictures/FluffyNature/FluffyNature_Screenshots_03_Final_Bram_Verschaeve.png"
+                                alt="Pastel Titan Texture Breakdown"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <img src="Pictures/FluffyNature/FluffyNature_Screenshots_04_Final_Bram_Verschaeve.png"
+                                alt="Pastel Titan Pose Variation"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <img src="Pictures/FluffyNature/FluffyNature_Screenshots_05_Final_Bram_Verschaeve.png"
+                                alt="Pastel Titan Detail Shot 2"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-zoom-in">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="zoomImage(this.closest('.group').querySelector('img'))"
+                                class="p-3 bg-gray-800 bg-opacity-80 rounded-full hover:bg-indigo-600 transition">
+                                <i data-feather="maximize" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <iframe width="480" height="270"
+                                src="https://www.youtube.com/embed/alFNywQdaL0?si=tHeq0kE-qgOIEL1p"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="py-10 bg-gray-800/50">
         <div class="container mx-auto px-6">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -357,177 +377,177 @@
             </div>
     </section> -->
 
-    <!-- Breakdown Section -->
-    <section class="py-10 bg-gray-800/50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Breakdown</h2>
+        <!-- Breakdown Section -->
+        <section class="py-10 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">Breakdown</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="740" height="415"
-                            src="https://www.youtube.com/embed/f5eJv3ege58?si=_PN9VOyI23GOk0o7"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <iframe width="740" height="415"
+                                src="https://www.youtube.com/embed/f5eJv3ege58?si=_PN9VOyI23GOk0o7"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
                     </div>
 
-                </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group">
+                        <div class="overflow-hidden rounded-xl aspect-video">
+                            <iframe width="740" height="415"
+                                src="https://www.youtube.com/embed/CxlFc5E-ojk?si=a3tzPpOiQatnvNmc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="relative group">
-                    <div class="overflow-hidden rounded-xl aspect-video">
-                        <iframe width="740" height="415"
-                            src="https://www.youtube.com/embed/CxlFc5E-ojk?si=a3tzPpOiQatnvNmc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Project Navigation -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between">
-                <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
-                    <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
-                    Back to Work
-                </a>
-                <a href="VFL.html" class="flex items-center group">
-                    Next Project: Vibe For Life
-                    <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-950">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-bold">BV</div>
-                    <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
-                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+        <!-- Project Navigation -->
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <a href="index.html" class="flex items-center mb-6 md:mb-0 group">
+                        <i data-feather="arrow-left" class="mr-2 group-hover:-translate-x-1 transition-transform"></i>
+                        Back to Work
+                    </a>
+                    <a href="VFL.html" class="flex items-center group">
+                        Next Project: Vibe For Life
+                        <i data-feather="arrow-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 bg-gray-950">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <div class="text-2xl font-bold">BV</div>
+                        <p class="text-gray-400 mt-2">3D Artist • Game Animator • Designer</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html#work" class="text-gray-400 hover:text-white transition">Work</a>
+                        <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                        <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bram Verschaeve. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
+                    </div>
                 </div>
             </div>
+        </footer>
+
+        <!-- Image Zoom Modal -->
+        <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
+            <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
+                <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+                <button onclick="downloadImage()"
+                    class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
+                    <i data-feather="download" class="w-6 h-6"></i>
+                </button>
+            </div>
         </div>
-    </footer>
 
-    <!-- Image Zoom Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
-        <div class="relative max-w-6xl w-full h-full flex items-center justify-center">
-            <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
-            <button onclick="closeModal()"
-                class="absolute top-4 right-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="x" class="w-6 h-6"></i>
-            </button>
-            <button onclick="downloadImage()"
-                class="absolute top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-indigo-600 transition">
-                <i data-feather="download" class="w-6 h-6"></i>
-            </button>
-        </div>
-    </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                once: true
+            });
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            once: true
-        });
+            // Initialize feather icons
+            feather.replace();
 
-        // Initialize feather icons
-        feather.replace();
+            // Image zoom functionality
+            function zoomImage(imgElement) {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImage');
 
-        // Image zoom functionality
-        function zoomImage(imgElement) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-
-            modalImg.src = imgElement.src;
-            modalImg.alt = imgElement.alt;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-
-        function downloadImage() {
-            const imgSrc = document.getElementById('modalImage').src;
-            const link = document.createElement('a');
-            link.href = imgSrc;
-            link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
-        // Close modal when clicking outside image
-        document.getElementById('imageModal').addEventListener('click', function (e) {
-            if (e.target === this) {
-                closeModal();
+                modalImg.src = imgElement.src;
+                modalImg.alt = imgElement.alt;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             }
-        });
 
-        // Close modal with ESC key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
-                closeModal();
+            function closeModal() {
+                document.getElementById('imageModal').classList.add('hidden');
+                document.body.style.overflow = '';
             }
-        });
-    </script>
-    <!-- Fullscreen Zoom Overlay -->
-    <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
-        <img id="zoomedImage" src="" alt="Zoomed view"
-            class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95 opacity-0" />
-    </div>
 
-    <script>
-        function zoomImage(imgElement) {
-            const overlay = document.getElementById('zoomOverlay');
-            const zoomed = document.getElementById('zoomedImage');
-            zoomed.src = imgElement.src;
+            function downloadImage() {
+                const imgSrc = document.getElementById('modalImage').src;
+                const link = document.createElement('a');
+                link.href = imgSrc;
+                link.download = 'pastel-titan-' + new Date().getTime() + '.jpg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
 
-            // show overlay
-            overlay.classList.remove('hidden');
-            setTimeout(() => {
-                zoomed.classList.remove('scale-95', 'opacity-0');
-                zoomed.classList.add('scale-100', 'opacity-100');
-            }, 10);
-        }
+            // Close modal when clicking outside image
+            document.getElementById('imageModal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
 
-        // close overlay when clicking outside the image
-        document.getElementById('zoomOverlay').addEventListener('click', (e) => {
-            if (e.target.id === 'zoomOverlay') {
+            // Close modal with ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !document.getElementById('imageModal').classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        </script>
+        <!-- Fullscreen Zoom Overlay -->
+        <div id="zoomOverlay" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+            <img id="zoomedImage" src="" alt="Zoomed view"
+                class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95 opacity-0" />
+        </div>
+
+        <script>
+            function zoomImage(imgElement) {
+                const overlay = document.getElementById('zoomOverlay');
                 const zoomed = document.getElementById('zoomedImage');
-                zoomed.classList.add('scale-95', 'opacity-0');
+                zoomed.src = imgElement.src;
+
+                // show overlay
+                overlay.classList.remove('hidden');
                 setTimeout(() => {
-                    document.getElementById('zoomOverlay').classList.add('hidden');
-                }, 200);
+                    zoomed.classList.remove('scale-95', 'opacity-0');
+                    zoomed.classList.add('scale-100', 'opacity-100');
+                }, 10);
             }
-        });
-    </script>
+
+            // close overlay when clicking outside the image
+            document.getElementById('zoomOverlay').addEventListener('click', (e) => {
+                if (e.target.id === 'zoomOverlay') {
+                    const zoomed = document.getElementById('zoomedImage');
+                    zoomed.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        document.getElementById('zoomOverlay').classList.add('hidden');
+                    }, 200);
+                }
+            });
+        </script>
 </body>
 
 </html>
